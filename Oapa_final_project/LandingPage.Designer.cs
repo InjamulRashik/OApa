@@ -69,7 +69,7 @@
             this.labelName.BackColor = System.Drawing.Color.Transparent;
             this.labelName.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelName.ForeColor = System.Drawing.Color.White;
-            this.labelName.Location = new System.Drawing.Point(111, 222);
+            this.labelName.Location = new System.Drawing.Point(111, 219);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(120, 24);
             this.labelName.TabIndex = 2;
