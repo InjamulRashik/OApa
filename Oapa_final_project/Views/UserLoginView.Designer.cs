@@ -1,6 +1,6 @@
 ﻿namespace Oapa_final_project
 {
-    partial class UserLogin
+    partial class UserLoginView
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserLogin));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserLoginView));
             this.jMetroTextBoxPin = new JMetroTextBox.JMetroTextBox();
             this.jMetroTextBoxNumber = new JMetroTextBox.JMetroTextBox();
             this.linkLabelRegister = new System.Windows.Forms.LinkLabel();

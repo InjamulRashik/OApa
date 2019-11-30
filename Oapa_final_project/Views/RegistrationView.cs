@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Oapa_final_project
 {
-    public partial class Registration : Form
+    public partial class RegistrationView : Form
     {
-        public Registration()
+        public RegistrationView()
         {
             InitializeComponent();
         }
@@ -40,12 +40,17 @@ namespace Oapa_final_project
         private void linkLabelLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            UserLogin login = new UserLogin();
+            UserLoginView login = new UserLoginView();
             login.Show();
 
         }
 
         private void jMaterialTextboxPin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void jThinButtonRegistration_Click(object sender, EventArgs e)
         {
 
         }

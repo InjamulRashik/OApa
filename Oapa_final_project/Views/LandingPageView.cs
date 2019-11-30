@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Oapa_final_project.Views;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Oapa_final_project
 {
-    public partial class LandingPage : Form
+    public partial class LandingPageView : Form
     {
-        public LandingPage()
+        public LandingPageView()
         {
             InitializeComponent();
         }
@@ -25,6 +26,19 @@ namespace Oapa_final_project
         private void FormClosingEvent(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void circularButtonBaby_Click(object sender, EventArgs e)
+        {
+            BabyView baby = new BabyView();
+            baby.Show();
+
+        }
+
+        private void circularButtonMaid_Click(object sender, EventArgs e)
+        {
+            MaidView maid = new MaidView();
+            maid.Show();
         }
     }
 }

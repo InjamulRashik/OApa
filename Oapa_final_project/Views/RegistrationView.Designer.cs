@@ -1,6 +1,6 @@
 ﻿namespace Oapa_final_project
 {
-    partial class Registration
+    partial class RegistrationView
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registration));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistrationView));
             this.labelReg = new System.Windows.Forms.Label();
             this.labelName = new System.Windows.Forms.Label();
             this.jMaterialTextboxName = new JMaterialTextbox.JMaterialTextbox();
@@ -265,6 +265,7 @@
             this.jThinButtonRegistration.Name = "jThinButtonRegistration";
             this.jThinButtonRegistration.Size = new System.Drawing.Size(166, 40);
             this.jThinButtonRegistration.TabIndex = 28;
+            this.jThinButtonRegistration.Click += new System.EventHandler(this.jThinButtonRegistration_Click);
             // 
             // linkLabelLogin
             // 

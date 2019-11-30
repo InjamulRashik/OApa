@@ -1,6 +1,6 @@
 ﻿namespace Oapa_final_project
 {
-    partial class LandingPage
+    partial class LandingPageView
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LandingPage));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LandingPageView));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labelWelcome = new System.Windows.Forms.Label();
             this.labelName = new System.Windows.Forms.Label();
@@ -126,6 +126,7 @@
             this.circularButtonBaby.Size = new System.Drawing.Size(77, 77);
             this.circularButtonBaby.TabIndex = 4;
             this.circularButtonBaby.UseVisualStyleBackColor = false;
+            this.circularButtonBaby.Click += new System.EventHandler(this.circularButtonBaby_Click);
             // 
             // circularButtonMaid
             // 
@@ -142,8 +143,9 @@
             this.circularButtonMaid.Size = new System.Drawing.Size(77, 77);
             this.circularButtonMaid.TabIndex = 3;
             this.circularButtonMaid.UseVisualStyleBackColor = false;
+            this.circularButtonMaid.Click += new System.EventHandler(this.circularButtonMaid_Click);
             // 
-            // LandingPage
+            // LandingPageView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -159,7 +161,7 @@
             this.Controls.Add(this.labelWelcome);
             this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
-            this.Name = "LandingPage";
+            this.Name = "LandingPageView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LandingPage";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormClosingEvent);

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Oapa_final_project
 {
-    public partial class UserLogin : Form
+    public partial class UserLoginView : Form
     {
-        public UserLogin()
+        public UserLoginView()
         {
             InitializeComponent();
         }
@@ -35,14 +35,14 @@ namespace Oapa_final_project
         private void jThinButtonUserLogin_Click(object sender, EventArgs e)
         {
             this.Hide();
-            LandingPage landingPage = new LandingPage();
+            LandingPageView landingPage = new LandingPageView();
             landingPage.Show();
         }
 
         private void linkLabelRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            Registration registerForm = new Registration();
+            RegistrationView registerForm = new RegistrationView();
             registerForm.Show();
             
         }

@@ -74,6 +74,18 @@
     <Compile Include="CircularButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Views\MaidView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MaidView.Designer.cs">
+      <DependentUpon>MaidView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BabyView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\BabyView.Designer.cs">
+      <DependentUpon>BabyView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\LandingPageView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +106,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Views\MaidView.resx">
+      <DependentUpon>MaidView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\BabyView.resx">
+      <DependentUpon>BabyView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\LandingPageView.resx">
       <DependentUpon>LandingPageView.cs</DependentUpon>
     </EmbeddedResource>
