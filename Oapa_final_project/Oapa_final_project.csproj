@@ -74,28 +74,28 @@
     <Compile Include="CircularButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="LandingPage.cs">
+    <Compile Include="Views\LandingPageView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LandingPage.Designer.cs">
-      <DependentUpon>LandingPage.cs</DependentUpon>
+    <Compile Include="Views\LandingPageView.Designer.cs">
+      <DependentUpon>LandingPageView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Registration.cs">
+    <Compile Include="Views\RegistrationView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Registration.Designer.cs">
-      <DependentUpon>Registration.cs</DependentUpon>
+    <Compile Include="Views\RegistrationView.Designer.cs">
+      <DependentUpon>RegistrationView.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserLogin.cs">
+    <Compile Include="Views\UserLoginView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserLogin.Designer.cs">
-      <DependentUpon>UserLogin.cs</DependentUpon>
+    <Compile Include="Views\UserLoginView.Designer.cs">
+      <DependentUpon>UserLoginView.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="LandingPage.resx">
-      <DependentUpon>LandingPage.cs</DependentUpon>
+    <EmbeddedResource Include="Views\LandingPageView.resx">
+      <DependentUpon>LandingPageView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -106,11 +106,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Registration.resx">
-      <DependentUpon>Registration.cs</DependentUpon>
+    <EmbeddedResource Include="Views\RegistrationView.resx">
+      <DependentUpon>RegistrationView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserLogin.resx">
-      <DependentUpon>UserLogin.cs</DependentUpon>
+    <EmbeddedResource Include="Views\UserLoginView.resx">
+      <DependentUpon>UserLoginView.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -124,6 +124,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
