@@ -8,7 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Oapa_final_project
+namespace Oapa_final_project.Views
+
 {
     public partial class UserLoginView : Form
     {

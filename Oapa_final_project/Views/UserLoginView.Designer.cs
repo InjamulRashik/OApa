@@ -1,4 +1,4 @@
-﻿namespace Oapa_final_project
+﻿namespace Oapa_final_project.Views
 {
     partial class UserLoginView
     {

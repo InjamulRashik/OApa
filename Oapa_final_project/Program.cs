@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Oapa_final_project.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace Oapa_final_project
 {
@@ -16,7 +18,7 @@ namespace Oapa_final_project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new UserLoginView());
+            Application.Run(new QRView());
         }
     }
 }

@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BasselTech CamCapture">
+      <HintPath>C:\Users\mihra\Downloads\BasselTech CamCapture.dll</HintPath>
+    </Reference>
     <Reference Include="JDragControl">
       <HintPath>..\..\..\Downloads\JDragControl.dll</HintPath>
     </Reference>
@@ -56,6 +59,9 @@
     </Reference>
     <Reference Include="JThinButton">
       <HintPath>..\..\..\Downloads\JThinButton.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagingToolkit.QRCode">
+      <HintPath>C:\Users\mihra\Downloads\MessagingToolkit.QRCode.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -92,6 +98,12 @@
     <Compile Include="Views\LandingPageView.Designer.cs">
       <DependentUpon>LandingPageView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\QRView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\QRView.designer.cs">
+      <DependentUpon>QRView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\RegistrationView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +136,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\QRView.resx">
+      <DependentUpon>QRView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\RegistrationView.resx">
       <DependentUpon>RegistrationView.cs</DependentUpon>
     </EmbeddedResource>
