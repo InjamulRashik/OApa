@@ -80,6 +80,15 @@
     <Compile Include="CircularButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Models\Baby.cs" />
+    <Compile Include="Models\Babys.cs" />
+    <Compile Include="Models\Database.cs" />
+    <Compile Include="Models\Maid.cs" />
+    <Compile Include="Models\Maids.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\Users.cs" />
     <Compile Include="Views\MaidView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,9 +167,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

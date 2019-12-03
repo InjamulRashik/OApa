@@ -13,7 +13,7 @@ namespace Oapa_final_project
 {
     public partial class LandingPageView : Form
     {
-        public LandingPageView()
+        public LandingPageView(dynamic result)
         {
             InitializeComponent();
         }

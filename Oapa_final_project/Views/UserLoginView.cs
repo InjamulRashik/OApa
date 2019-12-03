@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Oapa_final_project.Controllers;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -36,8 +37,19 @@ namespace Oapa_final_project.Views
         private void jThinButtonUserLogin_Click(object sender, EventArgs e)
         {
             this.Hide();
-            LandingPageView landingPage = new LandingPageView();
-            landingPage.Show();
+            /*LandingPageView landingPage = new LandingPageView();
+            landingPage.Show();*/
+
+            var result = LoginController.AuthenticateUser(jMetroTextBoxNumber.TextName, jMetroTextBoxPin.TextName);
+            if (result != null)
+            {
+                //MessageBox.Show("Success", "Alert");
+                new LandingPageView(result).Show();
+            }
+            else
+            {
+                MessageBox.Show("Failure", "Alert");
+            }
         }
 
         private void linkLabelRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

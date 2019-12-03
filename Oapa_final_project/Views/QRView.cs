@@ -47,7 +47,12 @@ namespace Oapa_final_project.Views
 
             try
             {
-                MessageBox.Show(Decoder.decode(new QRCodeBitmapImage(CapImage)));
+                DialogResult result = MessageBox.Show(Decoder.decode(new QRCodeBitmapImage(CapImage)));
+
+                if(result == DialogResult.OK)
+                {
+                    isActive = true;
+                }
             }
             catch(Exception)
             {
@@ -99,7 +104,7 @@ namespace Oapa_final_project.Views
 
         private void button1_Click(object sender, EventArgs e)
         {
-            isActive = true;
+            //isActive = true;
 
             try
             {
@@ -119,11 +124,21 @@ namespace Oapa_final_project.Views
 
         private void button2_Click(object sender, EventArgs e)
         {
-            isActive = false;
-            t.Stop();   // I forgot this line in the video
-            cam.Stop();
-            button2.Enabled = false;
-            button1.Enabled = true;
+
+            try
+            {
+                isActive = false;
+                t.Stop();
+                cam.Stop();
+                button2.Enabled = false;
+                button1.Enabled = true;
+            }
+            catch(Exception ex)
+            {
+                cam.Stop();
+                MessageBox.Show(ex.Message);
+               
+            }
         }
 
     }
