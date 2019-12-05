@@ -19,7 +19,7 @@ namespace Oapa_final_project.Views
         public static string passValueMin;
         public static string passValueSec;
 
-        Camera cam;
+        Camera camera;
         Timer t;
         BackgroundWorker worker;
         Bitmap CapImage;
@@ -28,7 +28,7 @@ namespace Oapa_final_project.Views
             InitializeComponent();
 
             t = new Timer();
-            cam = new Camera(pictureBox1);
+            camera = new Camera(pictureBoxQR);
             worker = new BackgroundWorker();
 
             worker.DoWork += Worker_DoWork;
@@ -38,7 +38,7 @@ namespace Oapa_final_project.Views
 
         private void T_Tick(object sender, EventArgs e)
         {
-            CapImage = cam.GetBitmap();
+            CapImage = camera.GetBitmap();
             if (CapImage != null && !worker.IsBusy)
                 worker.RunWorkerAsync();
         }
@@ -109,6 +109,8 @@ namespace Oapa_final_project.Views
 
         }
 
+        
+
         private void jThinButtonDone_Click(object sender, EventArgs e)
         {
             passValueMin = labelMin.Text;
@@ -123,13 +125,13 @@ namespace Oapa_final_project.Views
             {
                 isActive = false;
                 t.Stop();
-                cam.Stop();
+                camera.Stop();
                 jThinButtonStop.Enabled = false;
                 jThinButtonStart.Enabled = false;
             }
             catch (Exception ex)
             {
-                cam.Stop();
+                camera.Stop();
                 MessageBox.Show(ex.Message);
 
             }
@@ -140,7 +142,8 @@ namespace Oapa_final_project.Views
             //isActive = true;
             try
             {
-                cam.Start();
+                //isActive = true;
+                camera.Start();
                 t.Start();
 
                 jThinButtonStop.Enabled = true;

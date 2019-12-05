@@ -31,7 +31,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QRView));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labelMin = new System.Windows.Forms.Label();
             this.labelSec = new System.Windows.Forms.Label();
             this.labelCs = new System.Windows.Forms.Label();
@@ -46,16 +45,9 @@
             this.jThinButtonStart = new JThinButton.JThinButton();
             this.jThinButtonStop = new JThinButton.JThinButton();
             this.jThinButtonDone = new JThinButton.JThinButton();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBoxQR = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxQR)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(101, 233);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(157, 152);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // labelMin
             // 
@@ -196,7 +188,7 @@
             this.jThinButtonStart.HoverBorder = System.Drawing.Color.Purple;
             this.jThinButtonStart.HoverFontColor = System.Drawing.SystemColors.Desktop;
             this.jThinButtonStart.LineThickness = 2;
-            this.jThinButtonStart.Location = new System.Drawing.Point(84, 406);
+            this.jThinButtonStart.Location = new System.Drawing.Point(56, 497);
             this.jThinButtonStart.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.jThinButtonStart.Name = "jThinButtonStart";
             this.jThinButtonStart.Size = new System.Drawing.Size(80, 38);
@@ -218,7 +210,7 @@
             this.jThinButtonStop.HoverBorder = System.Drawing.Color.Purple;
             this.jThinButtonStop.HoverFontColor = System.Drawing.SystemColors.Desktop;
             this.jThinButtonStop.LineThickness = 2;
-            this.jThinButtonStop.Location = new System.Drawing.Point(198, 406);
+            this.jThinButtonStop.Location = new System.Drawing.Point(206, 497);
             this.jThinButtonStop.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.jThinButtonStop.Name = "jThinButtonStop";
             this.jThinButtonStop.Size = new System.Drawing.Size(80, 38);
@@ -247,13 +239,25 @@
             this.jThinButtonDone.TabIndex = 47;
             this.jThinButtonDone.Click += new System.EventHandler(this.jThinButtonDone_Click);
             // 
+            // pictureBoxQR
+            // 
+            this.pictureBoxQR.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxQR.BackgroundImage")));
+            this.pictureBoxQR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBoxQR.Location = new System.Drawing.Point(61, 241);
+            this.pictureBoxQR.Name = "pictureBoxQR";
+            this.pictureBoxQR.Size = new System.Drawing.Size(227, 227);
+            this.pictureBoxQR.TabIndex = 49;
+            this.pictureBoxQR.TabStop = false;
+            // 
             // QRView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(353, 650);
+            this.Controls.Add(this.pictureBoxQR);
             this.Controls.Add(this.jThinButtonDone);
             this.Controls.Add(this.jThinButtonStop);
             this.Controls.Add(this.jThinButtonStart);
@@ -267,21 +271,19 @@
             this.Controls.Add(this.labelCs);
             this.Controls.Add(this.labelSec);
             this.Controls.Add(this.labelMin);
-            this.Controls.Add(this.pictureBox1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "QRView";
             this.Text = "QR Timer";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxQR)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label labelMin;
         private System.Windows.Forms.Label labelSec;
         private System.Windows.Forms.Label labelCs;
@@ -296,6 +298,7 @@
         private JThinButton.JThinButton jThinButtonStart;
         private JThinButton.JThinButton jThinButtonStop;
         private JThinButton.JThinButton jThinButtonDone;
+        private System.Windows.Forms.PictureBox pictureBoxQR;
     }
 }
 
