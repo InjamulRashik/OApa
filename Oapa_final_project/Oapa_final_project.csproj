@@ -107,6 +107,18 @@
     <Compile Include="Views\LandingPageView.Designer.cs">
       <DependentUpon>LandingPageView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\PaySlipView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\PaySlipView.Designer.cs">
+      <DependentUpon>PaySlipView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PayCalView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\PayCalView.Designer.cs">
+      <DependentUpon>PayCalView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\QRView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +157,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\PaySlipView.resx">
+      <DependentUpon>PaySlipView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PayCalView.resx">
+      <DependentUpon>PayCalView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\QRView.resx">
       <DependentUpon>QRView.cs</DependentUpon>
     </EmbeddedResource>
