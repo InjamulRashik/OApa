@@ -29,8 +29,8 @@ namespace Oapa_final_project.Views
 
         private void PayCalView_Load(object sender, EventArgs e)
         {
-            //labelDateShow.Text = DateTime.Now.ToShortDateString();
-            //labelTimeShow.Text = DateTime.Now.ToString("hh tt");
+            labelDateShow.Text = DateTime.Now.ToShortDateString();
+            labelTimeShow.Text = DateTime.Now.ToString("hh tt");
         }
     }
 }

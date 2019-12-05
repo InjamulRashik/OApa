@@ -39,9 +39,10 @@
             this.labelTotalCost = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.jThinButtonQR = new JThinButton.JThinButton();
+            this.jThinButtonConfirm = new JThinButton.JThinButton();
             this.labelDateShow = new System.Windows.Forms.Label();
             this.labelTimeShow = new System.Windows.Forms.Label();
+            this.jThinButtonCancel = new JThinButton.JThinButton();
             this.SuspendLayout();
             // 
             // richTextBoxPaymentSlip
@@ -163,26 +164,26 @@
             this.label9.TabIndex = 9;
             this.label9.Text = "---------------------------------------------------------";
             // 
-            // jThinButtonQR
+            // jThinButtonConfirm
             // 
-            this.jThinButtonQR.BackColor = System.Drawing.Color.Transparent;
-            this.jThinButtonQR.BackgroundColor = System.Drawing.Color.DarkSlateBlue;
-            this.jThinButtonQR.BorderColor = System.Drawing.Color.MediumPurple;
-            this.jThinButtonQR.BorderRadius = 5;
-            this.jThinButtonQR.ButtonText = "QR Scan";
-            this.jThinButtonQR.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jThinButtonQR.Font = new System.Drawing.Font("Verdana", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.jThinButtonQR.Font_Size = new System.Drawing.Font("Verdana", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.jThinButtonQR.ForeColors = System.Drawing.Color.GhostWhite;
-            this.jThinButtonQR.HoverBackground = System.Drawing.Color.Indigo;
-            this.jThinButtonQR.HoverBorder = System.Drawing.Color.Purple;
-            this.jThinButtonQR.HoverFontColor = System.Drawing.SystemColors.Desktop;
-            this.jThinButtonQR.LineThickness = 2;
-            this.jThinButtonQR.Location = new System.Drawing.Point(111, 478);
-            this.jThinButtonQR.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.jThinButtonQR.Name = "jThinButtonQR";
-            this.jThinButtonQR.Size = new System.Drawing.Size(128, 38);
-            this.jThinButtonQR.TabIndex = 29;
+            this.jThinButtonConfirm.BackColor = System.Drawing.Color.Transparent;
+            this.jThinButtonConfirm.BackgroundColor = System.Drawing.Color.DarkSlateBlue;
+            this.jThinButtonConfirm.BorderColor = System.Drawing.Color.MediumPurple;
+            this.jThinButtonConfirm.BorderRadius = 5;
+            this.jThinButtonConfirm.ButtonText = "Confirm";
+            this.jThinButtonConfirm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.jThinButtonConfirm.Font = new System.Drawing.Font("Verdana", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.jThinButtonConfirm.Font_Size = new System.Drawing.Font("Verdana", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.jThinButtonConfirm.ForeColors = System.Drawing.Color.GhostWhite;
+            this.jThinButtonConfirm.HoverBackground = System.Drawing.Color.Indigo;
+            this.jThinButtonConfirm.HoverBorder = System.Drawing.Color.Purple;
+            this.jThinButtonConfirm.HoverFontColor = System.Drawing.SystemColors.Desktop;
+            this.jThinButtonConfirm.LineThickness = 2;
+            this.jThinButtonConfirm.Location = new System.Drawing.Point(177, 478);
+            this.jThinButtonConfirm.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.jThinButtonConfirm.Name = "jThinButtonConfirm";
+            this.jThinButtonConfirm.Size = new System.Drawing.Size(80, 38);
+            this.jThinButtonConfirm.TabIndex = 29;
             // 
             // labelDateShow
             // 
@@ -206,6 +207,27 @@
             this.labelTimeShow.Size = new System.Drawing.Size(0, 18);
             this.labelTimeShow.TabIndex = 31;
             // 
+            // jThinButtonCancel
+            // 
+            this.jThinButtonCancel.BackColor = System.Drawing.Color.Transparent;
+            this.jThinButtonCancel.BackgroundColor = System.Drawing.Color.DarkSlateBlue;
+            this.jThinButtonCancel.BorderColor = System.Drawing.Color.MediumPurple;
+            this.jThinButtonCancel.BorderRadius = 5;
+            this.jThinButtonCancel.ButtonText = "Cancel";
+            this.jThinButtonCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.jThinButtonCancel.Font = new System.Drawing.Font("Verdana", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.jThinButtonCancel.Font_Size = new System.Drawing.Font("Verdana", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.jThinButtonCancel.ForeColors = System.Drawing.Color.GhostWhite;
+            this.jThinButtonCancel.HoverBackground = System.Drawing.Color.Indigo;
+            this.jThinButtonCancel.HoverBorder = System.Drawing.Color.Purple;
+            this.jThinButtonCancel.HoverFontColor = System.Drawing.SystemColors.Desktop;
+            this.jThinButtonCancel.LineThickness = 2;
+            this.jThinButtonCancel.Location = new System.Drawing.Point(68, 478);
+            this.jThinButtonCancel.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.jThinButtonCancel.Name = "jThinButtonCancel";
+            this.jThinButtonCancel.Size = new System.Drawing.Size(81, 38);
+            this.jThinButtonCancel.TabIndex = 32;
+            // 
             // PayCalView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -213,9 +235,10 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(343, 589);
+            this.Controls.Add(this.jThinButtonCancel);
             this.Controls.Add(this.labelTimeShow);
             this.Controls.Add(this.labelDateShow);
-            this.Controls.Add(this.jThinButtonQR);
+            this.Controls.Add(this.jThinButtonConfirm);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.labelTotalCost);
@@ -246,8 +269,9 @@
         private System.Windows.Forms.Label labelTotalCost;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private JThinButton.JThinButton jThinButtonQR;
+        private JThinButton.JThinButton jThinButtonConfirm;
         private System.Windows.Forms.Label labelDateShow;
         private System.Windows.Forms.Label labelTimeShow;
+        private JThinButton.JThinButton jThinButtonCancel;
     }
 }

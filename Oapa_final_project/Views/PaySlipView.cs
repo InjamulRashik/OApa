@@ -27,10 +27,10 @@ namespace Oapa_final_project.Views
 
         }
 
-        private void PayCalView_Load(object sender, EventArgs e)
+        private void PaySlipView_Load(object sender, EventArgs e)
         {
-            //labelDateShow.Text = DateTime.Now.ToShortDateString();
-            //labelTimeShow.Text = DateTime.Now.ToString("hh tt");
+            labelMin.Text = QRView.passValueMin;
+            labelSec.Text = QRView.passValueSec;
         }
     }
 }

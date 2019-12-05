@@ -14,8 +14,10 @@ namespace Oapa_final_project.Views
 {
     public partial class QRView : Form
     {
-        int timeCs, timeSec, timeMin;
+        int timeCs, timeSec, timeMin , timeHour;
         bool isActive;
+        public static string passValueMin;
+        public static string passValueSec;
 
         Camera cam;
         Timer t;
@@ -66,7 +68,7 @@ namespace Oapa_final_project.Views
             {
                 timeCs++;
 
-                if(timeCs >= 100)
+                if(timeCs >= 60)
                 {
                     timeSec++;
                     timeCs = 0;
@@ -76,6 +78,11 @@ namespace Oapa_final_project.Views
                         timeMin++;
                         timeSec = 0;
 
+                    }
+                    if(timeMin >= 60)
+                    {
+                        timeHour++;
+                        timeMin = 0;
                     }
                 }
 
@@ -102,43 +109,48 @@ namespace Oapa_final_project.Views
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void jThinButtonDone_Click(object sender, EventArgs e)
         {
-            //isActive = true;
-
-            try
-            {
-
-                cam.Start();
-                t.Start();
-                
-                button2.Enabled = true;
-                button1.Enabled = false;
-            }
-            catch(Exception ex)
-            {
-                cam.Stop();
-                MessageBox.Show(ex.Message);
-            }
+            passValueMin = labelMin.Text;
+            passValueSec = labelSec.Text;
+            PaySlipView paySlipView = new PaySlipView();
+            paySlipView.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void jThinButtonStop_Click(object sender, EventArgs e)
         {
-
             try
             {
                 isActive = false;
                 t.Stop();
                 cam.Stop();
-                button2.Enabled = false;
-                button1.Enabled = true;
+                jThinButtonStop.Enabled = false;
+                jThinButtonStart.Enabled = false;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 cam.Stop();
                 MessageBox.Show(ex.Message);
-               
+
             }
+        }
+
+        private void jThinButtonStart_Click(object sender, EventArgs e)
+        {
+            //isActive = true;
+            try
+            {
+                cam.Start();
+                t.Start();
+
+                jThinButtonStop.Enabled = true;
+                jThinButtonStart.Enabled = false;
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
         }
 
     }

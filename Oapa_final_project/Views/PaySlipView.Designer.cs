@@ -40,10 +40,10 @@
             this.labelDateShow = new System.Windows.Forms.Label();
             this.labelTimeShow = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.labelMin = new System.Windows.Forms.Label();
+            this.labelHour = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.labelMin = new System.Windows.Forms.Label();
+            this.labelSec = new System.Windows.Forms.Label();
             this.labelHH = new System.Windows.Forms.Label();
             this.labelSS = new System.Windows.Forms.Label();
             this.labelMM = new System.Windows.Forms.Label();
@@ -186,17 +186,17 @@
             this.label2.TabIndex = 35;
             this.label2.Text = ":";
             // 
-            // labelMin
+            // labelHour
             // 
-            this.labelMin.AutoSize = true;
-            this.labelMin.BackColor = System.Drawing.Color.White;
-            this.labelMin.Font = new System.Drawing.Font("Quicksand", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMin.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.labelMin.Location = new System.Drawing.Point(58, 235);
-            this.labelMin.Name = "labelMin";
-            this.labelMin.Size = new System.Drawing.Size(51, 40);
-            this.labelMin.TabIndex = 33;
-            this.labelMin.Text = "00";
+            this.labelHour.AutoSize = true;
+            this.labelHour.BackColor = System.Drawing.Color.White;
+            this.labelHour.Font = new System.Drawing.Font("Quicksand", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHour.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.labelHour.Location = new System.Drawing.Point(58, 235);
+            this.labelHour.Name = "labelHour";
+            this.labelHour.Size = new System.Drawing.Size(51, 40);
+            this.labelHour.TabIndex = 33;
+            this.labelHour.Text = "00";
             // 
             // label3
             // 
@@ -210,29 +210,29 @@
             this.label3.TabIndex = 37;
             this.label3.Text = ":";
             // 
-            // label4
+            // labelMin
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Font = new System.Drawing.Font("Quicksand", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.label4.Location = new System.Drawing.Point(145, 235);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 40);
-            this.label4.TabIndex = 36;
-            this.label4.Text = "00";
+            this.labelMin.AutoSize = true;
+            this.labelMin.BackColor = System.Drawing.Color.White;
+            this.labelMin.Font = new System.Drawing.Font("Quicksand", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMin.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.labelMin.Location = new System.Drawing.Point(145, 235);
+            this.labelMin.Name = "labelMin";
+            this.labelMin.Size = new System.Drawing.Size(51, 40);
+            this.labelMin.TabIndex = 36;
+            this.labelMin.Text = "00";
             // 
-            // label5
+            // labelSec
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.Font = new System.Drawing.Font("Quicksand", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.label5.Location = new System.Drawing.Point(232, 235);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 40);
-            this.label5.TabIndex = 38;
-            this.label5.Text = "00";
+            this.labelSec.AutoSize = true;
+            this.labelSec.BackColor = System.Drawing.Color.White;
+            this.labelSec.Font = new System.Drawing.Font("Quicksand", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSec.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.labelSec.Location = new System.Drawing.Point(232, 235);
+            this.labelSec.Name = "labelSec";
+            this.labelSec.Size = new System.Drawing.Size(51, 40);
+            this.labelSec.TabIndex = 38;
+            this.labelSec.Text = "00";
             // 
             // labelHH
             // 
@@ -280,11 +280,11 @@
             this.Controls.Add(this.labelMM);
             this.Controls.Add(this.labelSS);
             this.Controls.Add(this.labelHH);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.labelSec);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.labelMin);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.labelHour);
             this.Controls.Add(this.labelTimeShow);
             this.Controls.Add(this.labelDateShow);
             this.Controls.Add(this.jThinButtonDone);
@@ -298,7 +298,7 @@
             this.DoubleBuffered = true;
             this.Name = "PaySlipView";
             this.Text = "PayCalView";
-            this.Load += new System.EventHandler(this.PayCalView_Load);
+            this.Load += new System.EventHandler(this.PaySlipView_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -317,10 +317,10 @@
         private System.Windows.Forms.Label labelDateShow;
         private System.Windows.Forms.Label labelTimeShow;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label labelMin;
+        private System.Windows.Forms.Label labelHour;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label labelMin;
+        private System.Windows.Forms.Label labelSec;
         private System.Windows.Forms.Label labelHH;
         private System.Windows.Forms.Label labelSS;
         private System.Windows.Forms.Label labelMM;
