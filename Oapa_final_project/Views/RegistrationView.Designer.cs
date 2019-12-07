@@ -271,6 +271,7 @@
             // 
             this.linkLabelLogin.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.linkLabelLogin.AutoSize = true;
+            this.linkLabelLogin.BackColor = System.Drawing.Color.Transparent;
             this.linkLabelLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabelLogin.LinkColor = System.Drawing.Color.Purple;
             this.linkLabelLogin.Location = new System.Drawing.Point(186, 555);
@@ -281,7 +282,7 @@
             this.linkLabelLogin.Text = "<< Back to Login Page";
             this.linkLabelLogin.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelLogin_LinkClicked);
             // 
-            // Registration
+            // RegistrationView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -302,7 +303,7 @@
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.labelReg);
             this.DoubleBuffered = true;
-            this.Name = "Registration";
+            this.Name = "RegistrationView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registration";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormClosingEvent);

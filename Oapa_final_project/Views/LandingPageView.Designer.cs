@@ -43,7 +43,6 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.Location = new System.Drawing.Point(126, 85);
             this.pictureBox1.Name = "pictureBox1";
@@ -72,9 +71,8 @@
             this.labelName.ForeColor = System.Drawing.Color.White;
             this.labelName.Location = new System.Drawing.Point(111, 219);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(120, 24);
+            this.labelName.Size = new System.Drawing.Size(0, 24);
             this.labelName.TabIndex = 2;
-            this.labelName.Text = "Sirazum Meem";
             // 
             // labelMaid
             // 

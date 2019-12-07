@@ -7,31 +7,30 @@ using System.Threading.Tasks;
 
 namespace Oapa_final_project.Models
 {
-    class Maids
+    class Admins
     {
-
         SqlConnection conn;
-        public Maids()
+        public Admins()
         {
             conn = new SqlConnection("Server=DESKTOP-M4LHFUP;Database=OAPA;User Id=sa;Password=12345;");
         }
 
-        public Maid GetMaid(int id)
+        public Admin AuthenticateAdmin(string name, string password)
         {
-            Maid maid = null;
+            Admin admin = null;
             conn.Open();
-            string query = "SELECT * FROM Maids WHERE MaidId='" + id + "'";
+            string query = "SELECT * FROM Users WHERE Name='" + name + "' and Password='" + password + "'";
             SqlCommand cmd = new SqlCommand(query, conn);
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
-                maid = new Maid();
-                maid.MaidId = reader.GetInt32(reader.GetOrdinal("MaidId"));
-                maid.MaidName = reader.GetString(reader.GetOrdinal("MaidName"));
-                maid.MaidRate = reader.GetString(reader.GetOrdinal("MaidRate"));
+                admin = new Admin();
+                admin.Name = reader.GetString(reader.GetOrdinal("Name"));
+                admin.Id = reader.GetString(reader.GetOrdinal("Id"));
+                admin.Password = reader.GetString(reader.GetOrdinal("Password"));
             }
             conn.Close();
-            return maid;
+            return admin;
         }
 
     }

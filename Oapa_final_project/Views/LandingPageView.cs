@@ -1,4 +1,5 @@
-﻿using Oapa_final_project.Views;
+﻿using Oapa_final_project.Controllers;
+using Oapa_final_project.Views;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,9 +14,11 @@ namespace Oapa_final_project
 {
     public partial class LandingPageView : Form
     {
-        public LandingPageView(dynamic result)
+        public LandingPageView(dynamic user)
         {
             InitializeComponent();
+            labelName.Text = user.Name;
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

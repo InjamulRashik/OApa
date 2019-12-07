@@ -26,7 +26,24 @@ namespace Oapa_final_project.Models
             while (reader.Read())
             {
                 user = new User();
-                //user.Name = reader.GetString(reader.GetOrdinal("Name"));
+                user.Name = reader.GetString(reader.GetOrdinal("Name"));
+                user.Number = reader.GetString(reader.GetOrdinal("Number"));
+                user.Pin = reader.GetString(reader.GetOrdinal("Pin"));
+            }
+            conn.Close();
+            return user;
+        }
+        public User GetUser(string name)
+        {
+            User user = null;
+            conn.Open();
+            string query = "SELECT * FROM Users WHERE Name='" + name + "'";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                user = new User();
+                user.Name = reader.GetString(reader.GetOrdinal("Name"));
                 user.Number = reader.GetString(reader.GetOrdinal("Number"));
                 user.Pin = reader.GetString(reader.GetOrdinal("Pin"));
             }

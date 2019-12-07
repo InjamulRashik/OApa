@@ -80,8 +80,13 @@
     <Compile Include="CircularButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Controllers\AdminLoginController.cs" />
+    <Compile Include="Controllers\BabyController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\MaidController.cs" />
     <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Models\Admin.cs" />
+    <Compile Include="Models\Admins.cs" />
     <Compile Include="Models\Baby.cs" />
     <Compile Include="Models\Babys.cs" />
     <Compile Include="Models\Database.cs" />
@@ -89,6 +94,24 @@
     <Compile Include="Models\Maids.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\Users.cs" />
+    <Compile Include="Views\AdminLandingPageView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AdminLandingPageView.Designer.cs">
+      <DependentUpon>AdminLandingPageView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdminLoginView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AdminLoginView.Designer.cs">
+      <DependentUpon>AdminLoginView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HomePageView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\HomePageView.Designer.cs">
+      <DependentUpon>HomePageView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\MaidView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +162,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Views\AdminLandingPageView.resx">
+      <DependentUpon>AdminLandingPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AdminLoginView.resx">
+      <DependentUpon>AdminLoginView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\HomePageView.resx">
+      <DependentUpon>HomePageView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\MaidView.resx">
       <DependentUpon>MaidView.cs</DependentUpon>
     </EmbeddedResource>
