@@ -1,5 +1,6 @@
 ﻿using Oapa_final_project.Controllers;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,12 +19,39 @@ namespace Oapa_final_project.Views
             InitializeComponent();
 
         }
- 
 
-        private void jThinButtonShowUsers_Click(object sender, EventArgs e)
+        private void jThinButtonShowUsers_Click_1(object sender, EventArgs e)
         {
-            var users = UserController.GetAllUsers();
-            dataGridViewShowInfo.DataSource = users;
+            ArrayList users = UserController.GetAllUsers();
+            //dataGridViewShowInfo.DataSource = users;
+            dataGridView1.DataSource = users;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ArrayList users = UserController.GetAllUsers();
+            //dataGridViewShowInfo.DataSource = users;
+            dataGridView1.DataSource = users;
+        }
+
+        private void jThinButtonShowMaids_Click(object sender, EventArgs e)
+        {
+            ArrayList maids = MaidController.GetAllMaids();
+            dataGridView1.DataSource = maids;
+        }
+
+        private void jThinButtonShowBabys_Click(object sender, EventArgs e)
+        {
+            ArrayList babys = BabyController.GetAllBabys();
+            dataGridView1.DataSource = babys;
+        }
+
+        private void linkLabelLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            HomePageView homePageView = new HomePageView();
+            homePageView.Show();
         }
     }
+ 
 }

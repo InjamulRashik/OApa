@@ -37,12 +37,12 @@
             this.labelCharge = new System.Windows.Forms.Label();
             this.labelServiceCharge = new System.Windows.Forms.Label();
             this.labelTotalCost = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.jThinButtonConfirm = new JThinButton.JThinButton();
             this.labelDateShow = new System.Windows.Forms.Label();
             this.labelTimeShow = new System.Windows.Forms.Label();
             this.jThinButtonCancel = new JThinButton.JThinButton();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // richTextBoxPaymentSlip
@@ -59,11 +59,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Quicksand", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(38, 87);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(269, 43);
+            this.label1.Size = new System.Drawing.Size(263, 33);
             this.label1.TabIndex = 1;
             this.label1.Text = "Approximate Cost";
             // 
@@ -71,11 +71,11 @@
             // 
             this.labelDate.AutoSize = true;
             this.labelDate.BackColor = System.Drawing.Color.White;
-            this.labelDate.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDate.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.labelDate.Location = new System.Drawing.Point(43, 178);
             this.labelDate.Name = "labelDate";
-            this.labelDate.Size = new System.Drawing.Size(125, 18);
+            this.labelDate.Size = new System.Drawing.Size(135, 16);
             this.labelDate.TabIndex = 2;
             this.labelDate.Text = "Appoinment Date :";
             this.labelDate.Click += new System.EventHandler(this.labelDate_Click);
@@ -84,11 +84,11 @@
             // 
             this.labelTime.AutoSize = true;
             this.labelTime.BackColor = System.Drawing.Color.White;
-            this.labelTime.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTime.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.labelTime.Location = new System.Drawing.Point(43, 217);
             this.labelTime.Name = "labelTime";
-            this.labelTime.Size = new System.Drawing.Size(125, 18);
+            this.labelTime.Size = new System.Drawing.Size(137, 16);
             this.labelTime.TabIndex = 3;
             this.labelTime.Text = "Appoinment Time :";
             // 
@@ -96,11 +96,11 @@
             // 
             this.labelServiceHour.AutoSize = true;
             this.labelServiceHour.BackColor = System.Drawing.Color.White;
-            this.labelServiceHour.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelServiceHour.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelServiceHour.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.labelServiceHour.Location = new System.Drawing.Point(43, 256);
             this.labelServiceHour.Name = "labelServiceHour";
-            this.labelServiceHour.Size = new System.Drawing.Size(94, 18);
+            this.labelServiceHour.Size = new System.Drawing.Size(106, 16);
             this.labelServiceHour.TabIndex = 4;
             this.labelServiceHour.Text = "Service Hour :";
             // 
@@ -108,11 +108,11 @@
             // 
             this.labelCharge.AutoSize = true;
             this.labelCharge.BackColor = System.Drawing.Color.White;
-            this.labelCharge.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCharge.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCharge.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.labelCharge.Location = new System.Drawing.Point(43, 313);
+            this.labelCharge.Location = new System.Drawing.Point(43, 311);
             this.labelCharge.Name = "labelCharge";
-            this.labelCharge.Size = new System.Drawing.Size(59, 18);
+            this.labelCharge.Size = new System.Drawing.Size(66, 16);
             this.labelCharge.TabIndex = 5;
             this.labelCharge.Text = "Charge :";
             // 
@@ -120,11 +120,11 @@
             // 
             this.labelServiceCharge.AutoSize = true;
             this.labelServiceCharge.BackColor = System.Drawing.Color.White;
-            this.labelServiceCharge.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelServiceCharge.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelServiceCharge.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.labelServiceCharge.Location = new System.Drawing.Point(43, 353);
             this.labelServiceCharge.Name = "labelServiceCharge";
-            this.labelServiceCharge.Size = new System.Drawing.Size(106, 18);
+            this.labelServiceCharge.Size = new System.Drawing.Size(123, 16);
             this.labelServiceCharge.TabIndex = 6;
             this.labelServiceCharge.Text = "Service Charge :";
             // 
@@ -132,37 +132,13 @@
             // 
             this.labelTotalCost.AutoSize = true;
             this.labelTotalCost.BackColor = System.Drawing.Color.White;
-            this.labelTotalCost.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTotalCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTotalCost.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.labelTotalCost.Location = new System.Drawing.Point(43, 387);
             this.labelTotalCost.Name = "labelTotalCost";
-            this.labelTotalCost.Size = new System.Drawing.Size(77, 18);
+            this.labelTotalCost.Size = new System.Drawing.Size(87, 16);
             this.labelTotalCost.TabIndex = 7;
             this.labelTotalCost.Text = "Total Cost :";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.White;
-            this.label8.Font = new System.Drawing.Font("Bauhaus 93", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.label8.Location = new System.Drawing.Point(53, 371);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(236, 16);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "---------------------------------------------------------";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.White;
-            this.label9.Font = new System.Drawing.Font("Bauhaus 93", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.label9.Location = new System.Drawing.Point(53, 286);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(236, 16);
-            this.label9.TabIndex = 9;
-            this.label9.Text = "---------------------------------------------------------";
             // 
             // jThinButtonConfirm
             // 
@@ -184,27 +160,28 @@
             this.jThinButtonConfirm.Name = "jThinButtonConfirm";
             this.jThinButtonConfirm.Size = new System.Drawing.Size(80, 38);
             this.jThinButtonConfirm.TabIndex = 29;
+            this.jThinButtonConfirm.Click += new System.EventHandler(this.jThinButtonConfirm_Click);
             // 
             // labelDateShow
             // 
             this.labelDateShow.AutoSize = true;
             this.labelDateShow.BackColor = System.Drawing.Color.White;
-            this.labelDateShow.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDateShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDateShow.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.labelDateShow.Location = new System.Drawing.Point(174, 178);
             this.labelDateShow.Name = "labelDateShow";
-            this.labelDateShow.Size = new System.Drawing.Size(0, 18);
+            this.labelDateShow.Size = new System.Drawing.Size(0, 16);
             this.labelDateShow.TabIndex = 30;
             // 
             // labelTimeShow
             // 
             this.labelTimeShow.AutoSize = true;
             this.labelTimeShow.BackColor = System.Drawing.Color.White;
-            this.labelTimeShow.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTimeShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTimeShow.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.labelTimeShow.Location = new System.Drawing.Point(174, 217);
             this.labelTimeShow.Name = "labelTimeShow";
-            this.labelTimeShow.Size = new System.Drawing.Size(0, 18);
+            this.labelTimeShow.Size = new System.Drawing.Size(0, 16);
             this.labelTimeShow.TabIndex = 31;
             // 
             // jThinButtonCancel
@@ -228,6 +205,30 @@
             this.jThinButtonCancel.Size = new System.Drawing.Size(81, 38);
             this.jThinButtonCancel.TabIndex = 32;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.White;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.label9.Location = new System.Drawing.Point(59, 285);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(224, 18);
+            this.label9.TabIndex = 33;
+            this.label9.Text = "------------------------------------";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.label2.Location = new System.Drawing.Point(59, 335);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(224, 18);
+            this.label2.TabIndex = 34;
+            this.label2.Text = "------------------------------------";
+            // 
             // PayCalView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -235,12 +236,12 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(343, 589);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.jThinButtonCancel);
             this.Controls.Add(this.labelTimeShow);
             this.Controls.Add(this.labelDateShow);
             this.Controls.Add(this.jThinButtonConfirm);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.labelTotalCost);
             this.Controls.Add(this.labelServiceCharge);
             this.Controls.Add(this.labelCharge);
@@ -267,11 +268,11 @@
         private System.Windows.Forms.Label labelCharge;
         private System.Windows.Forms.Label labelServiceCharge;
         private System.Windows.Forms.Label labelTotalCost;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
         private JThinButton.JThinButton jThinButtonConfirm;
         private System.Windows.Forms.Label labelDateShow;
         private System.Windows.Forms.Label labelTimeShow;
         private JThinButton.JThinButton jThinButtonCancel;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label2;
     }
 }

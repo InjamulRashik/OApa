@@ -34,34 +34,37 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BasselTech CamCapture">
-      <HintPath>C:\Users\mihra\Downloads\BasselTech CamCapture.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\BasselTech CamCapture.dll</HintPath>
+    </Reference>
+    <Reference Include="FlatButton">
+      <HintPath>..\..\..\..\Downloads\FlatButton.dll</HintPath>
     </Reference>
     <Reference Include="JDragControl">
-      <HintPath>..\..\..\Downloads\JDragControl.dll</HintPath>
+      <HintPath>..\..\..\..\Downloads\JDragControl.dll</HintPath>
     </Reference>
     <Reference Include="JGradient Panel">
-      <HintPath>..\..\..\Downloads\JGradient Panel.dll</HintPath>
+      <HintPath>..\..\..\..\Downloads\JGradient Panel.dll</HintPath>
     </Reference>
     <Reference Include="JImageButton">
-      <HintPath>..\..\..\Downloads\JImageButton.dll</HintPath>
+      <HintPath>..\..\..\..\Downloads\JImageButton.dll</HintPath>
     </Reference>
     <Reference Include="JMaterialTextbox">
-      <HintPath>..\..\..\Downloads\JMaterialTextbox.dll</HintPath>
+      <HintPath>..\..\..\..\Downloads\JMaterialTextbox.dll</HintPath>
     </Reference>
     <Reference Include="JMetroTextBox">
-      <HintPath>..\..\..\Downloads\JMetroTextBox.dll</HintPath>
+      <HintPath>..\..\..\..\Downloads\JMetroTextBox.dll</HintPath>
     </Reference>
     <Reference Include="JTextBox">
-      <HintPath>..\..\..\Downloads\JTextBox.dll</HintPath>
+      <HintPath>..\..\..\..\Downloads\JTextBox.dll</HintPath>
     </Reference>
     <Reference Include="JTextBox2">
-      <HintPath>..\..\..\Downloads\JTextBox2.dll</HintPath>
+      <HintPath>..\..\..\..\Downloads\JTextBox2.dll</HintPath>
     </Reference>
     <Reference Include="JThinButton">
-      <HintPath>..\..\..\Downloads\JThinButton.dll</HintPath>
+      <HintPath>..\..\..\..\Downloads\JThinButton.dll</HintPath>
     </Reference>
     <Reference Include="MessagingToolkit.QRCode">
-      <HintPath>C:\Users\mihra\Downloads\MessagingToolkit.QRCode.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\MessagingToolkit.QRCode.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

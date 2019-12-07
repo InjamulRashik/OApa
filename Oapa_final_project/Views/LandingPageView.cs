@@ -17,7 +17,7 @@ namespace Oapa_final_project
         public LandingPageView(dynamic user)
         {
             InitializeComponent();
-            labelName.Text = user.Name;
+            LabelNameShow.Text = user.Name;
 
         }
 

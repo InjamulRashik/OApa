@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -13,7 +14,7 @@ namespace Oapa_final_project.Models
         SqlConnection conn;
         public Maids()
         {
-            conn = new SqlConnection("Server=DESKTOP-M4LHFUP;Database=OAPA;User Id=sa;Password=12345;");
+            conn = new SqlConnection("Server=DESKTOP-4SCOPPB;Database=OAPA1;User Id=sa;Password=12345;");
         }
 
         public Maid GetMaid(int id)
@@ -29,6 +30,25 @@ namespace Oapa_final_project.Models
                 maid.MaidId = reader.GetInt32(reader.GetOrdinal("MaidId"));
                 maid.MaidName = reader.GetString(reader.GetOrdinal("MaidName"));
                 maid.MaidRate = reader.GetString(reader.GetOrdinal("MaidRate"));
+            }
+            conn.Close();
+            return maid;
+        }
+
+        public ArrayList GetAllMaids()
+        {
+            ArrayList maid = new ArrayList();
+            conn.Open();
+            string query = "SELECT * FROM Maids";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                Maid temp = new Maid();
+                temp.MaidName = reader.GetString(reader.GetOrdinal("MaidName"));
+                temp.MaidRate = reader.GetString(reader.GetOrdinal("MaidRate"));
+                temp.MaidId = reader.GetInt32(reader.GetOrdinal("MaidId"));
+                maid.Add(temp);
             }
             conn.Close();
             return maid;

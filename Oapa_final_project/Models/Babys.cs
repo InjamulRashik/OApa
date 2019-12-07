@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -13,7 +14,7 @@ namespace Oapa_final_project.Models
         SqlConnection conn;
         public Babys()
         {
-            conn = new SqlConnection("Server=DESKTOP-M4LHFUP;Database=OAPA;User Id=sa;Password=12345;");
+            conn = new SqlConnection("Server=DESKTOP-4SCOPPB;Database=OAPA1;User Id=sa;Password=12345;");
         }
 
         public Baby GetBaby(int id)
@@ -29,6 +30,25 @@ namespace Oapa_final_project.Models
                 baby.BabyId = reader.GetInt32(reader.GetOrdinal("BabyId"));
                 baby.BabyName = reader.GetString(reader.GetOrdinal("BabyName"));
                 baby.BabyRate = reader.GetString(reader.GetOrdinal("BabyRate"));
+            }
+            conn.Close();
+            return baby;
+        }
+
+        public ArrayList GetAllBabys()
+        {
+            ArrayList baby = new ArrayList();
+            conn.Open();
+            string query = "SELECT * FROM Babys";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                Baby temp = new Baby();
+                temp.BabyName = reader.GetString(reader.GetOrdinal("BabyName"));
+                temp.BabyRate = reader.GetString(reader.GetOrdinal("BabyRate"));
+                temp.BabyId = reader.GetInt32(reader.GetOrdinal("BabyId"));
+                baby.Add(temp);
             }
             conn.Close();
             return baby;

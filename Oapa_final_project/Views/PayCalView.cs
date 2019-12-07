@@ -32,5 +32,10 @@ namespace Oapa_final_project.Views
             labelDateShow.Text = DateTime.Now.ToShortDateString();
             labelTimeShow.Text = DateTime.Now.ToString("hh tt");
         }
+
+        private void jThinButtonConfirm_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

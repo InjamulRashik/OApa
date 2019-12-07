@@ -34,7 +34,6 @@
             this.labelCharge = new System.Windows.Forms.Label();
             this.labelServiceCharge = new System.Windows.Forms.Label();
             this.labelTotalCost = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.jThinButtonDone = new JThinButton.JThinButton();
             this.labelDateShow = new System.Windows.Forms.Label();
@@ -47,6 +46,7 @@
             this.labelHH = new System.Windows.Forms.Label();
             this.labelSS = new System.Windows.Forms.Label();
             this.labelMM = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // richTextBoxPaymentSlip
@@ -63,11 +63,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Quicksand", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(81, 98);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(202, 43);
+            this.label1.Size = new System.Drawing.Size(199, 33);
             this.label1.TabIndex = 1;
             this.label1.Text = "Payment Slip";
             // 
@@ -75,11 +75,11 @@
             // 
             this.labelCharge.AutoSize = true;
             this.labelCharge.BackColor = System.Drawing.Color.White;
-            this.labelCharge.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCharge.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCharge.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.labelCharge.Location = new System.Drawing.Point(43, 313);
+            this.labelCharge.Location = new System.Drawing.Point(43, 308);
             this.labelCharge.Name = "labelCharge";
-            this.labelCharge.Size = new System.Drawing.Size(59, 18);
+            this.labelCharge.Size = new System.Drawing.Size(66, 16);
             this.labelCharge.TabIndex = 5;
             this.labelCharge.Text = "Charge :";
             // 
@@ -87,11 +87,11 @@
             // 
             this.labelServiceCharge.AutoSize = true;
             this.labelServiceCharge.BackColor = System.Drawing.Color.White;
-            this.labelServiceCharge.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelServiceCharge.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelServiceCharge.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.labelServiceCharge.Location = new System.Drawing.Point(43, 353);
             this.labelServiceCharge.Name = "labelServiceCharge";
-            this.labelServiceCharge.Size = new System.Drawing.Size(106, 18);
+            this.labelServiceCharge.Size = new System.Drawing.Size(123, 16);
             this.labelServiceCharge.TabIndex = 6;
             this.labelServiceCharge.Text = "Service Charge :";
             // 
@@ -99,37 +99,26 @@
             // 
             this.labelTotalCost.AutoSize = true;
             this.labelTotalCost.BackColor = System.Drawing.Color.White;
-            this.labelTotalCost.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTotalCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTotalCost.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.labelTotalCost.Location = new System.Drawing.Point(43, 387);
             this.labelTotalCost.Name = "labelTotalCost";
-            this.labelTotalCost.Size = new System.Drawing.Size(77, 18);
+            this.labelTotalCost.Size = new System.Drawing.Size(87, 16);
             this.labelTotalCost.TabIndex = 7;
             this.labelTotalCost.Text = "Total Cost :";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.White;
-            this.label8.Font = new System.Drawing.Font("Bauhaus 93", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.label8.Location = new System.Drawing.Point(53, 371);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(236, 16);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "---------------------------------------------------------";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.White;
-            this.label9.Font = new System.Drawing.Font("Bauhaus 93", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.label9.Location = new System.Drawing.Point(53, 286);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(236, 16);
+            this.label9.Size = new System.Drawing.Size(224, 18);
             this.label9.TabIndex = 9;
-            this.label9.Text = "---------------------------------------------------------";
+            this.label9.Text = "------------------------------------";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // jThinButtonDone
             // 
@@ -156,33 +145,33 @@
             // 
             this.labelDateShow.AutoSize = true;
             this.labelDateShow.BackColor = System.Drawing.Color.White;
-            this.labelDateShow.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDateShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDateShow.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.labelDateShow.Location = new System.Drawing.Point(174, 178);
             this.labelDateShow.Name = "labelDateShow";
-            this.labelDateShow.Size = new System.Drawing.Size(0, 18);
+            this.labelDateShow.Size = new System.Drawing.Size(0, 16);
             this.labelDateShow.TabIndex = 30;
             // 
             // labelTimeShow
             // 
             this.labelTimeShow.AutoSize = true;
             this.labelTimeShow.BackColor = System.Drawing.Color.White;
-            this.labelTimeShow.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTimeShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTimeShow.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.labelTimeShow.Location = new System.Drawing.Point(174, 217);
             this.labelTimeShow.Name = "labelTimeShow";
-            this.labelTimeShow.Size = new System.Drawing.Size(0, 18);
+            this.labelTimeShow.Size = new System.Drawing.Size(0, 16);
             this.labelTimeShow.TabIndex = 31;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Quicksand", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.label2.Location = new System.Drawing.Point(115, 235);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(24, 40);
+            this.label2.Size = new System.Drawing.Size(23, 31);
             this.label2.TabIndex = 35;
             this.label2.Text = ":";
             // 
@@ -190,11 +179,11 @@
             // 
             this.labelHour.AutoSize = true;
             this.labelHour.BackColor = System.Drawing.Color.White;
-            this.labelHour.Font = new System.Drawing.Font("Quicksand", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHour.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelHour.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.labelHour.Location = new System.Drawing.Point(58, 235);
             this.labelHour.Name = "labelHour";
-            this.labelHour.Size = new System.Drawing.Size(51, 40);
+            this.labelHour.Size = new System.Drawing.Size(46, 31);
             this.labelHour.TabIndex = 33;
             this.labelHour.Text = "00";
             // 
@@ -202,11 +191,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Font = new System.Drawing.Font("Quicksand", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.label3.Location = new System.Drawing.Point(202, 235);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(24, 40);
+            this.label3.Size = new System.Drawing.Size(23, 31);
             this.label3.TabIndex = 37;
             this.label3.Text = ":";
             // 
@@ -214,11 +203,11 @@
             // 
             this.labelMin.AutoSize = true;
             this.labelMin.BackColor = System.Drawing.Color.White;
-            this.labelMin.Font = new System.Drawing.Font("Quicksand", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMin.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.labelMin.Location = new System.Drawing.Point(145, 235);
             this.labelMin.Name = "labelMin";
-            this.labelMin.Size = new System.Drawing.Size(51, 40);
+            this.labelMin.Size = new System.Drawing.Size(46, 31);
             this.labelMin.TabIndex = 36;
             this.labelMin.Text = "00";
             // 
@@ -226,11 +215,11 @@
             // 
             this.labelSec.AutoSize = true;
             this.labelSec.BackColor = System.Drawing.Color.White;
-            this.labelSec.Font = new System.Drawing.Font("Quicksand", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSec.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSec.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.labelSec.Location = new System.Drawing.Point(232, 235);
             this.labelSec.Name = "labelSec";
-            this.labelSec.Size = new System.Drawing.Size(51, 40);
+            this.labelSec.Size = new System.Drawing.Size(46, 31);
             this.labelSec.TabIndex = 38;
             this.labelSec.Text = "00";
             // 
@@ -238,11 +227,11 @@
             // 
             this.labelHH.AutoSize = true;
             this.labelHH.BackColor = System.Drawing.Color.White;
-            this.labelHH.Font = new System.Drawing.Font("Quicksand", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHH.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelHH.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.labelHH.Location = new System.Drawing.Point(57, 195);
+            this.labelHH.Location = new System.Drawing.Point(53, 195);
             this.labelHH.Name = "labelHH";
-            this.labelHH.Size = new System.Drawing.Size(63, 31);
+            this.labelHH.Size = new System.Drawing.Size(62, 25);
             this.labelHH.TabIndex = 39;
             this.labelHH.Text = "Hour";
             // 
@@ -250,11 +239,11 @@
             // 
             this.labelSS.AutoSize = true;
             this.labelSS.BackColor = System.Drawing.Color.White;
-            this.labelSS.Font = new System.Drawing.Font("Quicksand", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSS.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSS.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.labelSS.Location = new System.Drawing.Point(218, 195);
+            this.labelSS.Location = new System.Drawing.Point(215, 195);
             this.labelSS.Name = "labelSS";
-            this.labelSS.Size = new System.Drawing.Size(89, 31);
+            this.labelSS.Size = new System.Drawing.Size(91, 25);
             this.labelSS.TabIndex = 40;
             this.labelSS.Text = "Second";
             // 
@@ -262,13 +251,25 @@
             // 
             this.labelMM.AutoSize = true;
             this.labelMM.BackColor = System.Drawing.Color.White;
-            this.labelMM.Font = new System.Drawing.Font("Quicksand", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMM.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMM.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.labelMM.Location = new System.Drawing.Point(128, 196);
+            this.labelMM.Location = new System.Drawing.Point(126, 196);
             this.labelMM.Name = "labelMM";
-            this.labelMM.Size = new System.Drawing.Size(82, 31);
+            this.labelMM.Size = new System.Drawing.Size(83, 25);
             this.labelMM.TabIndex = 41;
             this.labelMM.Text = "Minute";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.White;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.label4.Location = new System.Drawing.Point(53, 328);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(224, 18);
+            this.label4.TabIndex = 42;
+            this.label4.Text = "------------------------------------";
             // 
             // PaySlipView
             // 
@@ -277,6 +278,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(343, 589);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.labelMM);
             this.Controls.Add(this.labelSS);
             this.Controls.Add(this.labelHH);
@@ -289,7 +291,6 @@
             this.Controls.Add(this.labelDateShow);
             this.Controls.Add(this.jThinButtonDone);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.labelTotalCost);
             this.Controls.Add(this.labelServiceCharge);
             this.Controls.Add(this.labelCharge);
@@ -311,7 +312,6 @@
         private System.Windows.Forms.Label labelCharge;
         private System.Windows.Forms.Label labelServiceCharge;
         private System.Windows.Forms.Label labelTotalCost;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private JThinButton.JThinButton jThinButtonDone;
         private System.Windows.Forms.Label labelDateShow;
@@ -324,5 +324,6 @@
         private System.Windows.Forms.Label labelHH;
         private System.Windows.Forms.Label labelSS;
         private System.Windows.Forms.Label labelMM;
+        private System.Windows.Forms.Label label4;
     }
 }

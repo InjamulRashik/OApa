@@ -32,5 +32,10 @@ namespace Oapa_final_project.Views
             labelMin.Text = QRView.passValueMin;
             labelSec.Text = QRView.passValueSec;
         }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -10,11 +10,15 @@ namespace Oapa_final_project.Models
     {
         public Users Users { get; set; }
         public Admins Admins { get; set; }
+        public Maids Maids { get; set; }
+        public Babys Babys { get; set; }
 
         public Database()
         {
             Users = new Users();
             Admins = new Admins();
+            Maids = new Maids();
+            Babys = new Babys();
         }
     }
 }

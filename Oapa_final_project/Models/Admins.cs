@@ -12,7 +12,7 @@ namespace Oapa_final_project.Models
         SqlConnection conn;
         public Admins()
         {
-            conn = new SqlConnection("Server=DESKTOP-M4LHFUP;Database=OAPA;User Id=sa;Password=12345;");
+            conn = new SqlConnection("Server=DESKTOP-4SCOPPB;Database=OAPA1;User Id=sa;Password=12345;");
         }
 
         public Admin AuthenticateAdmin(string name, string password)
@@ -31,6 +31,7 @@ namespace Oapa_final_project.Models
             }
             conn.Close();
             return admin;
+
         }
 
     }

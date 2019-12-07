@@ -20,7 +20,7 @@ namespace Oapa_final_project.Models
         SqlConnection conn;
         public Users()
         {
-            conn = new SqlConnection("Server=DESKTOP-M4LHFUP;Database=OAPA;User Id=sa;Password=12345;");
+            conn = new SqlConnection("Server=DESKTOP-4SCOPPB;Database=OAPA1;User Id=sa;Password=12345;");
         }
 
         public User AuthenticateUser(string number, string pin)
@@ -67,15 +67,10 @@ namespace Oapa_final_project.Models
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
-                User u = new User()
-                {
-                    Name = reader.GetString(reader.GetOrdinal("Name")),
-                    Number = reader.GetString(reader.GetOrdinal("Number")),
-                    Pin = reader.GetString(reader.GetOrdinal("Pin")),
-                    Gender = reader.GetString(reader.GetOrdinal("Gender")),
-                    Profession = reader.GetString(reader.GetOrdinal("Profession")),
-                };
-                
+                User temp = new User();
+                temp.Name = reader.GetString(reader.GetOrdinal("Name"));
+                temp.Number = reader.GetString(reader.GetOrdinal("Number"));
+                users.Add(temp);
             }
             conn.Close();
             return users;

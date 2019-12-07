@@ -11,10 +11,7 @@ namespace Oapa_final_project.Controllers
     class UserController
     {
         static Database db = new Database();
-        public static ArrayList GetAllUsers()
-        {
-            return db.Users.GetAllUsers();
-        }
+        
         public static bool AddUser(string name, string number, string pin, string gender, string profession)
         {
             //object sel = comboBoxProf.SelectedValue;
@@ -32,6 +29,11 @@ namespace Oapa_final_project.Controllers
             if (result) return true;
             else return false;*/
             return db.Users.AddUser(u);
+        }
+
+        public static ArrayList GetAllUsers()
+        {
+            return db.Users.GetAllUsers();
         }
 
 

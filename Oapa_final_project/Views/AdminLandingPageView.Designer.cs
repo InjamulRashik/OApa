@@ -33,19 +33,20 @@
             this.jThinButtonShowUsers = new JThinButton.JThinButton();
             this.jThinButtonShowMaids = new JThinButton.JThinButton();
             this.jThinButtonShowBabys = new JThinButton.JThinButton();
-            this.dataGridViewShowInfo = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewShowInfo)).BeginInit();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.linkLabelLogin = new System.Windows.Forms.LinkLabel();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelWelcome
             // 
             this.labelWelcome.AutoSize = true;
             this.labelWelcome.BackColor = System.Drawing.Color.Transparent;
-            this.labelWelcome.Font = new System.Drawing.Font("Quicksand", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelWelcome.ForeColor = System.Drawing.Color.White;
             this.labelWelcome.Location = new System.Drawing.Point(95, 102);
             this.labelWelcome.Name = "labelWelcome";
-            this.labelWelcome.Size = new System.Drawing.Size(159, 28);
+            this.labelWelcome.Size = new System.Drawing.Size(164, 24);
             this.labelWelcome.TabIndex = 2;
             this.labelWelcome.Text = "Welcome Admin";
             // 
@@ -91,6 +92,7 @@
             this.jThinButtonShowMaids.Name = "jThinButtonShowMaids";
             this.jThinButtonShowMaids.Size = new System.Drawing.Size(97, 40);
             this.jThinButtonShowMaids.TabIndex = 34;
+            this.jThinButtonShowMaids.Click += new System.EventHandler(this.jThinButtonShowMaids_Click);
             // 
             // jThinButtonShowBabys
             // 
@@ -112,15 +114,30 @@
             this.jThinButtonShowBabys.Name = "jThinButtonShowBabys";
             this.jThinButtonShowBabys.Size = new System.Drawing.Size(97, 40);
             this.jThinButtonShowBabys.TabIndex = 35;
+            this.jThinButtonShowBabys.Click += new System.EventHandler(this.jThinButtonShowBabys_Click);
             // 
-            // dataGridViewShowInfo
+            // dataGridView1
             // 
-            this.dataGridViewShowInfo.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.dataGridViewShowInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewShowInfo.Location = new System.Drawing.Point(48, 334);
-            this.dataGridViewShowInfo.Name = "dataGridViewShowInfo";
-            this.dataGridViewShowInfo.Size = new System.Drawing.Size(240, 204);
-            this.dataGridViewShowInfo.TabIndex = 36;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(48, 319);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(240, 222);
+            this.dataGridView1.TabIndex = 36;
+            // 
+            // linkLabelLogin
+            // 
+            this.linkLabelLogin.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.linkLabelLogin.AutoSize = true;
+            this.linkLabelLogin.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabelLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabelLogin.LinkColor = System.Drawing.Color.DarkSlateBlue;
+            this.linkLabelLogin.Location = new System.Drawing.Point(194, 567);
+            this.linkLabelLogin.Name = "linkLabelLogin";
+            this.linkLabelLogin.Size = new System.Drawing.Size(138, 13);
+            this.linkLabelLogin.TabIndex = 37;
+            this.linkLabelLogin.TabStop = true;
+            this.linkLabelLogin.Text = "<< Back to Home Page";
+            this.linkLabelLogin.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelLogin_LinkClicked);
             // 
             // AdminLandingPageView
             // 
@@ -129,7 +146,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(343, 589);
-            this.Controls.Add(this.dataGridViewShowInfo);
+            this.Controls.Add(this.linkLabelLogin);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.jThinButtonShowBabys);
             this.Controls.Add(this.jThinButtonShowMaids);
             this.Controls.Add(this.jThinButtonShowUsers);
@@ -137,7 +155,7 @@
             this.DoubleBuffered = true;
             this.Name = "AdminLandingPageView";
             this.Text = "AdminLandingPage";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewShowInfo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -149,6 +167,7 @@
         private JThinButton.JThinButton jThinButtonShowUsers;
         private JThinButton.JThinButton jThinButtonShowMaids;
         private JThinButton.JThinButton jThinButtonShowBabys;
-        private System.Windows.Forms.DataGridView dataGridViewShowInfo;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.LinkLabel linkLabelLogin;
     }
 }
