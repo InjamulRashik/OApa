@@ -1,5 +1,6 @@
 ﻿using Oapa_final_project.Models;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,10 @@ namespace Oapa_final_project.Controllers
     class UserController
     {
         static Database db = new Database();
+        public static ArrayList GetAllUsers()
+        {
+            return db.Users.GetAllUsers();
+        }
         public static bool AddUser(string name, string number, string pin, string gender, string profession)
         {
             //object sel = comboBoxProf.SelectedValue;

@@ -69,6 +69,7 @@
             this.jThinButtonShowUsers.Name = "jThinButtonShowUsers";
             this.jThinButtonShowUsers.Size = new System.Drawing.Size(97, 40);
             this.jThinButtonShowUsers.TabIndex = 32;
+            this.jThinButtonShowUsers.Click += new System.EventHandler(this.jThinButtonShowUsers_Click_1);
             // 
             // jThinButtonShowMaids
             // 
@@ -114,14 +115,14 @@
             // 
             // dataGridViewShowInfo
             // 
-            this.dataGridViewShowInfo.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dataGridViewShowInfo.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dataGridViewShowInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewShowInfo.Location = new System.Drawing.Point(48, 334);
             this.dataGridViewShowInfo.Name = "dataGridViewShowInfo";
             this.dataGridViewShowInfo.Size = new System.Drawing.Size(240, 204);
             this.dataGridViewShowInfo.TabIndex = 36;
             // 
-            // AdminLandingPage
+            // AdminLandingPageView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -134,7 +135,7 @@
             this.Controls.Add(this.jThinButtonShowUsers);
             this.Controls.Add(this.labelWelcome);
             this.DoubleBuffered = true;
-            this.Name = "AdminLandingPage";
+            this.Name = "AdminLandingPageView";
             this.Text = "AdminLandingPage";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewShowInfo)).EndInit();
             this.ResumeLayout(false);

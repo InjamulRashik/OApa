@@ -1,9 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using Oapa_final_project.Models;
+using Oapa_final_project.Controllers;
+using System.Data.SqlClient;
+using System.Collections;
 
 namespace Oapa_final_project.Models
 {
@@ -49,6 +56,29 @@ namespace Oapa_final_project.Models
             }
             conn.Close();
             return user;
+        }
+
+        public ArrayList GetAllUsers()
+        {
+            ArrayList users = new ArrayList();
+            conn.Open();
+            string query = "SELECT * FROM Users";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                User u = new User()
+                {
+                    Name = reader.GetString(reader.GetOrdinal("Name")),
+                    Number = reader.GetString(reader.GetOrdinal("Number")),
+                    Pin = reader.GetString(reader.GetOrdinal("Pin")),
+                    Gender = reader.GetString(reader.GetOrdinal("Gender")),
+                    Profession = reader.GetString(reader.GetOrdinal("Profession")),
+                };
+                
+            }
+            conn.Close();
+            return users;
         }
 
         public bool AddUser(User user)
