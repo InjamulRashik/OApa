@@ -7,38 +7,75 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Oapa_final_project.Controllers;
+using Oapa_final_project.Models;
 
 namespace Oapa_final_project.Views
 {
     public partial class BabyView : Form
     {
+        public static string passRate = null;
         public BabyView()
         {
             InitializeComponent();
+
+            var babyList = BabyController.GetAllBabys();
+
+            foreach (Baby baby in babyList)
+            {
+                ComboBoxBaby.Items.Add(baby.BabyId + ". " + baby.BabyName);
+
+            }
         }
 
-        private void jImageButtonBack_Click(object sender, EventArgs e)
+        
+
+       
+
+        
+
+        private void buttonSelect_Click(object sender, EventArgs e)
         {
-           
+            if (passRate != null)
+            {
+                new PayCalView(passRate).Show();
+                this.Hide();
+            }
         }
 
-        private void labelBaby_Click(object sender, EventArgs e)
-        {
+        
 
+        
+
+        private void jThinButtonShowSelect_Click(object sender, EventArgs e)
+        {
+            if (passRate != null)
+            {
+                new PayCalView(passRate).Show();
+                this.Hide();
+            }
         }
 
-        private void jThinButtonSelectBaby1_Click(object sender, EventArgs e)
+        private void ComboBoxBaby_SelectedIndexChanged(object sender, EventArgs e)
         {
-             
-        }
+            var selectedString = ComboBoxBaby.Text;
 
-        private void labelCharge_Click(object sender, EventArgs e)
-        {
+            string ids = "";
+            foreach (var i in selectedString)
+            {
+                if (i == '.')
+                {
+                    break;
+                }
+                ids = ids + i;
+            }
 
-        }
+            int id = Int32.Parse(ids);
+            Baby bb = BabyController.GetBaby(id);
 
-        private void labelBabyName_Click(object sender, EventArgs e)
-        {
+            labelBabyName.Text = bb.BabyName;
+            labelBabyRate.Text = bb.BabyRate;
+            passRate = bb.BabyRate;
 
         }
     }

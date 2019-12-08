@@ -64,13 +64,13 @@
             this.jMetroTextBoxAdminPassword.BorderColor = System.Drawing.Color.Indigo;
             this.jMetroTextBoxAdminPassword.BorderRadius = 10;
             this.jMetroTextBoxAdminPassword.FillColor = System.Drawing.SystemColors.Control;
-            this.jMetroTextBoxAdminPassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.jMetroTextBoxAdminPassword.Font_Size = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.jMetroTextBoxAdminPassword.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.jMetroTextBoxAdminPassword.Font_Size = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.jMetroTextBoxAdminPassword.ForeColors = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.jMetroTextBoxAdminPassword.IsPassword = true;
             this.jMetroTextBoxAdminPassword.LineThickness = 2;
             this.jMetroTextBoxAdminPassword.Location = new System.Drawing.Point(83, 315);
-            this.jMetroTextBoxAdminPassword.Margin = new System.Windows.Forms.Padding(5);
+            this.jMetroTextBoxAdminPassword.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.jMetroTextBoxAdminPassword.MaxLength = 32767;
             this.jMetroTextBoxAdminPassword.MouseOnHover = System.Drawing.Color.Purple;
             this.jMetroTextBoxAdminPassword.Name = "jMetroTextBoxAdminPassword";
@@ -89,13 +89,13 @@
             this.jMetroTextBoxAdminId.BorderColor = System.Drawing.Color.Indigo;
             this.jMetroTextBoxAdminId.BorderRadius = 10;
             this.jMetroTextBoxAdminId.FillColor = System.Drawing.SystemColors.Control;
-            this.jMetroTextBoxAdminId.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.jMetroTextBoxAdminId.Font_Size = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.jMetroTextBoxAdminId.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.jMetroTextBoxAdminId.Font_Size = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.jMetroTextBoxAdminId.ForeColors = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.jMetroTextBoxAdminId.IsPassword = false;
             this.jMetroTextBoxAdminId.LineThickness = 2;
             this.jMetroTextBoxAdminId.Location = new System.Drawing.Point(83, 206);
-            this.jMetroTextBoxAdminId.Margin = new System.Windows.Forms.Padding(5);
+            this.jMetroTextBoxAdminId.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.jMetroTextBoxAdminId.MaxLength = 32767;
             this.jMetroTextBoxAdminId.MouseOnHover = System.Drawing.Color.Purple;
             this.jMetroTextBoxAdminId.Name = "jMetroTextBoxAdminId";
@@ -112,11 +112,11 @@
             // 
             this.labelPinLog.AutoSize = true;
             this.labelPinLog.BackColor = System.Drawing.Color.Transparent;
-            this.labelPinLog.Font = new System.Drawing.Font("Quicksand", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPinLog.Font = new System.Drawing.Font("Quicksand Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPinLog.ForeColor = System.Drawing.Color.Purple;
             this.labelPinLog.Location = new System.Drawing.Point(63, 265);
             this.labelPinLog.Name = "labelPinLog";
-            this.labelPinLog.Size = new System.Drawing.Size(216, 28);
+            this.labelPinLog.Size = new System.Drawing.Size(223, 22);
             this.labelPinLog.TabIndex = 21;
             this.labelPinLog.Text = "Enter Admin Password";
             // 
@@ -124,11 +124,11 @@
             // 
             this.labelNumberLog.AutoSize = true;
             this.labelNumberLog.BackColor = System.Drawing.Color.Transparent;
-            this.labelNumberLog.Font = new System.Drawing.Font("Quicksand", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNumberLog.Font = new System.Drawing.Font("Quicksand Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNumberLog.ForeColor = System.Drawing.Color.Purple;
             this.labelNumberLog.Location = new System.Drawing.Point(94, 157);
             this.labelNumberLog.Name = "labelNumberLog";
-            this.labelNumberLog.Size = new System.Drawing.Size(147, 28);
+            this.labelNumberLog.Size = new System.Drawing.Size(153, 22);
             this.labelNumberLog.TabIndex = 20;
             this.labelNumberLog.Text = "Enter Admin ID";
             // 

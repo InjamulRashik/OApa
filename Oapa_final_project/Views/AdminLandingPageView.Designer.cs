@@ -35,6 +35,7 @@
             this.jThinButtonShowBabys = new JThinButton.JThinButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.linkLabelLogin = new System.Windows.Forms.LinkLabel();
+            this.jThinButtonApaRegForm = new JThinButton.JThinButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,11 +43,11 @@
             // 
             this.labelWelcome.AutoSize = true;
             this.labelWelcome.BackColor = System.Drawing.Color.Transparent;
-            this.labelWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelWelcome.Font = new System.Drawing.Font("Quicksand Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelWelcome.ForeColor = System.Drawing.Color.White;
             this.labelWelcome.Location = new System.Drawing.Point(95, 102);
             this.labelWelcome.Name = "labelWelcome";
-            this.labelWelcome.Size = new System.Drawing.Size(164, 24);
+            this.labelWelcome.Size = new System.Drawing.Size(167, 22);
             this.labelWelcome.TabIndex = 2;
             this.labelWelcome.Text = "Welcome Admin";
             // 
@@ -139,6 +140,28 @@
             this.linkLabelLogin.Text = "<< Back to Home Page";
             this.linkLabelLogin.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelLogin_LinkClicked);
             // 
+            // jThinButtonApaRegForm
+            // 
+            this.jThinButtonApaRegForm.BackColor = System.Drawing.Color.Transparent;
+            this.jThinButtonApaRegForm.BackgroundColor = System.Drawing.Color.MediumPurple;
+            this.jThinButtonApaRegForm.BorderColor = System.Drawing.Color.DarkSlateBlue;
+            this.jThinButtonApaRegForm.BorderRadius = 5;
+            this.jThinButtonApaRegForm.ButtonText = "Register APA!";
+            this.jThinButtonApaRegForm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.jThinButtonApaRegForm.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.jThinButtonApaRegForm.Font_Size = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.jThinButtonApaRegForm.ForeColors = System.Drawing.Color.GhostWhite;
+            this.jThinButtonApaRegForm.HoverBackground = System.Drawing.Color.Indigo;
+            this.jThinButtonApaRegForm.HoverBorder = System.Drawing.Color.Purple;
+            this.jThinButtonApaRegForm.HoverFontColor = System.Drawing.SystemColors.Desktop;
+            this.jThinButtonApaRegForm.LineThickness = 2;
+            this.jThinButtonApaRegForm.Location = new System.Drawing.Point(5, 551);
+            this.jThinButtonApaRegForm.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.jThinButtonApaRegForm.Name = "jThinButtonApaRegForm";
+            this.jThinButtonApaRegForm.Size = new System.Drawing.Size(110, 26);
+            this.jThinButtonApaRegForm.TabIndex = 38;
+            this.jThinButtonApaRegForm.Click += new System.EventHandler(this.jThinButtonApaRegForm_Click);
+            // 
             // AdminLandingPageView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -146,6 +169,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(343, 589);
+            this.Controls.Add(this.jThinButtonApaRegForm);
             this.Controls.Add(this.linkLabelLogin);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.jThinButtonShowBabys);
@@ -169,5 +193,6 @@
         private JThinButton.JThinButton jThinButtonShowBabys;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.LinkLabel linkLabelLogin;
+        private JThinButton.JThinButton jThinButtonApaRegForm;
     }
 }

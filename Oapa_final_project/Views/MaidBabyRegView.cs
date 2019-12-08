@@ -13,6 +13,8 @@ namespace Oapa_final_project.Views
 {
     public partial class MaidBabyRegView : Form
     {
+        //private dynamic result;
+
         public MaidBabyRegView()
         {
             InitializeComponent();
@@ -25,12 +27,6 @@ namespace Oapa_final_project.Views
             else
             {
                 DialogResult result1 = MessageBox.Show("Succesfully registered", "Alert");
-
-                if (result1 == DialogResult.OK)
-                {
-                    this.Hide();
-                    new UserLoginView().Show();
-                }
             }
         }
 
@@ -41,13 +37,18 @@ namespace Oapa_final_project.Views
             else
             {
                 DialogResult result1 = MessageBox.Show("Succesfully registered", "Alert");
-
-                if (result1 == DialogResult.OK)
-                {
-                    this.Hide();
-                    new UserLoginView().Show();
-                }
             }
+        }
+
+        private void MaidBabyRegView_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabelLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Close();
+
         }
     }
 }

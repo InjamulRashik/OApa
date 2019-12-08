@@ -43,6 +43,12 @@
             this.jThinButtonCancel = new JThinButton.JThinButton();
             this.label9 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.labelRate = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.labelTc = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // richTextBoxPaymentSlip
@@ -59,11 +65,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Quicksand Bold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(38, 87);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(263, 33);
+            this.label1.Size = new System.Drawing.Size(279, 33);
             this.label1.TabIndex = 1;
             this.label1.Text = "Approximate Cost";
             // 
@@ -112,9 +118,9 @@
             this.labelCharge.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.labelCharge.Location = new System.Drawing.Point(43, 311);
             this.labelCharge.Name = "labelCharge";
-            this.labelCharge.Size = new System.Drawing.Size(66, 16);
+            this.labelCharge.Size = new System.Drawing.Size(98, 16);
             this.labelCharge.TabIndex = 5;
-            this.labelCharge.Text = "Charge :";
+            this.labelCharge.Text = "Hourly Rate: ";
             // 
             // labelServiceCharge
             // 
@@ -229,6 +235,79 @@
             this.label2.TabIndex = 34;
             this.label2.Text = "------------------------------------";
             // 
+            // labelRate
+            // 
+            this.labelRate.AutoSize = true;
+            this.labelRate.BackColor = System.Drawing.Color.White;
+            this.labelRate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRate.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.labelRate.Location = new System.Drawing.Point(228, 311);
+            this.labelRate.Name = "labelRate";
+            this.labelRate.Size = new System.Drawing.Size(28, 16);
+            this.labelRate.TabIndex = 35;
+            this.labelRate.Text = "----";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.label3.Location = new System.Drawing.Point(238, 353);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(37, 16);
+            this.label3.TabIndex = 36;
+            this.label3.Text = "10%";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.White;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.label4.Location = new System.Drawing.Point(238, 256);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(33, 16);
+            this.label4.TabIndex = 37;
+            this.label4.Text = "1 hr";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // labelTc
+            // 
+            this.labelTc.AutoSize = true;
+            this.labelTc.BackColor = System.Drawing.Color.White;
+            this.labelTc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTc.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.labelTc.Location = new System.Drawing.Point(222, 387);
+            this.labelTc.Name = "labelTc";
+            this.labelTc.Size = new System.Drawing.Size(28, 16);
+            this.labelTc.TabIndex = 38;
+            this.labelTc.Text = "----";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.label5.Location = new System.Drawing.Point(257, 311);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(44, 16);
+            this.label5.TabIndex = 39;
+            this.label5.Text = "Taka";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.White;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.label6.Location = new System.Drawing.Point(257, 387);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(44, 16);
+            this.label6.TabIndex = 40;
+            this.label6.Text = "Taka";
+            // 
             // PayCalView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -236,6 +315,12 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(343, 589);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.labelTc);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.labelRate);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.jThinButtonCancel);
@@ -253,6 +338,7 @@
             this.DoubleBuffered = true;
             this.Name = "PayCalView";
             this.Text = "PayCalView";
+            this.Load += new System.EventHandler(this.PayCalView_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -274,5 +360,11 @@
         private JThinButton.JThinButton jThinButtonCancel;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelRate;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label labelTc;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }

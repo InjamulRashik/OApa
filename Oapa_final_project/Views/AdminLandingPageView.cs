@@ -48,9 +48,16 @@ namespace Oapa_final_project.Views
 
         private void linkLabelLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            this.Hide();
+            this.Close();
             HomePageView homePageView = new HomePageView();
             homePageView.Show();
+        }
+
+        private void jThinButtonApaRegForm_Click(object sender, EventArgs e)
+        {
+            MaidBabyRegView maidBabyRegView = new MaidBabyRegView();
+            maidBabyRegView.Show();
+
         }
     }
  

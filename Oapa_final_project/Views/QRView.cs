@@ -16,16 +16,18 @@ namespace Oapa_final_project.Views
     {
         int timeCs, timeSec, timeMin , timeHour;
         bool isActive;
-        public static string passValueMin;
-        public static string passValueSec;
-
+        public static int passValueMin;
+        public static  int passValueSec;
+        public static string passRate;
         Camera camera;
         Timer t;
         BackgroundWorker worker;
         Bitmap CapImage;
-        public QRView()
+        public QRView(dynamic rate)
         {
             InitializeComponent();
+
+            passRate = rate;
 
             t = new Timer();
             camera = new Camera(pictureBoxQR);
@@ -97,6 +99,8 @@ namespace Oapa_final_project.Views
             labelCs.Text = String.Format("{0:00}", timeCs);
             labelSec.Text = String.Format("{0:00}", timeSec);
             labelMin.Text = String.Format("{0:00}", timeMin);
+            passValueMin = timeMin;
+            passValueSec = timeSec;
         }
 
         private void QRView_Load(object sender, EventArgs e)
@@ -113,10 +117,8 @@ namespace Oapa_final_project.Views
 
         private void jThinButtonDone_Click(object sender, EventArgs e)
         {
-            passValueMin = labelMin.Text;
-            passValueSec = labelSec.Text;
-            PaySlipView paySlipView = new PaySlipView();
-            paySlipView.Show();
+            this.Hide();
+            new PaySlipView(passValueMin, passValueSec, passRate).Show();
         }
 
         private void jThinButtonStop_Click(object sender, EventArgs e)

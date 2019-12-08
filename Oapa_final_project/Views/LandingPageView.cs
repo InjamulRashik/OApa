@@ -17,7 +17,7 @@ namespace Oapa_final_project
         public LandingPageView(dynamic user)
         {
             InitializeComponent();
-            LabelNameShow.Text = user.Name;
+            labelName1.Text = user.Name;
 
         }
 
@@ -33,6 +33,7 @@ namespace Oapa_final_project
 
         private void circularButtonBaby_Click(object sender, EventArgs e)
         {
+            this.Hide();
             BabyView baby = new BabyView();
             baby.Show();
 
@@ -40,8 +41,14 @@ namespace Oapa_final_project
 
         private void circularButtonMaid_Click(object sender, EventArgs e)
         {
-            //MaidView maid = new MaidView();
-            //maid.Show();
+            MaidView maid = new MaidView();
+            maid.Show();
+            this.Hide();
+        }
+
+        private void LandingPageView_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -40,6 +40,7 @@
             this.jMaterialTextboxBabyName = new JMaterialTextbox.JMaterialTextbox();
             this.labelBabyName = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.linkLabelLogin = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // jThinButtonMaidRegister
@@ -159,7 +160,7 @@
             this.jThinButtonBabyRegister.HoverBorder = System.Drawing.Color.Purple;
             this.jThinButtonBabyRegister.HoverFontColor = System.Drawing.SystemColors.Desktop;
             this.jThinButtonBabyRegister.LineThickness = 2;
-            this.jThinButtonBabyRegister.Location = new System.Drawing.Point(88, 536);
+            this.jThinButtonBabyRegister.Location = new System.Drawing.Point(88, 483);
             this.jThinButtonBabyRegister.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.jThinButtonBabyRegister.Name = "jThinButtonBabyRegister";
             this.jThinButtonBabyRegister.Size = new System.Drawing.Size(166, 40);
@@ -176,7 +177,7 @@
             this.jMaterialTextBabyRate.IsPassword = false;
             this.jMaterialTextBabyRate.LineBackColor = System.Drawing.Color.Indigo;
             this.jMaterialTextBabyRate.LineThickness = 3;
-            this.jMaterialTextBabyRate.Location = new System.Drawing.Point(119, 475);
+            this.jMaterialTextBabyRate.Location = new System.Drawing.Point(119, 422);
             this.jMaterialTextBabyRate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.jMaterialTextBabyRate.MaxLength = 32767;
             this.jMaterialTextBabyRate.Name = "jMaterialTextBabyRate";
@@ -194,7 +195,7 @@
             this.labelBabyRate.BackColor = System.Drawing.Color.Transparent;
             this.labelBabyRate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelBabyRate.ForeColor = System.Drawing.Color.Indigo;
-            this.labelBabyRate.Location = new System.Drawing.Point(25, 474);
+            this.labelBabyRate.Location = new System.Drawing.Point(25, 421);
             this.labelBabyRate.Name = "labelBabyRate";
             this.labelBabyRate.Size = new System.Drawing.Size(53, 18);
             this.labelBabyRate.TabIndex = 38;
@@ -210,7 +211,7 @@
             this.jMaterialTextboxBabyName.IsPassword = false;
             this.jMaterialTextboxBabyName.LineBackColor = System.Drawing.Color.Indigo;
             this.jMaterialTextboxBabyName.LineThickness = 3;
-            this.jMaterialTextboxBabyName.Location = new System.Drawing.Point(119, 434);
+            this.jMaterialTextboxBabyName.Location = new System.Drawing.Point(119, 381);
             this.jMaterialTextboxBabyName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.jMaterialTextboxBabyName.MaxLength = 32767;
             this.jMaterialTextboxBabyName.Name = "jMaterialTextboxBabyName";
@@ -228,7 +229,7 @@
             this.labelBabyName.BackColor = System.Drawing.Color.Transparent;
             this.labelBabyName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelBabyName.ForeColor = System.Drawing.Color.Indigo;
-            this.labelBabyName.Location = new System.Drawing.Point(25, 434);
+            this.labelBabyName.Location = new System.Drawing.Point(25, 381);
             this.labelBabyName.Name = "labelBabyName";
             this.labelBabyName.Size = new System.Drawing.Size(62, 18);
             this.labelBabyName.TabIndex = 36;
@@ -240,16 +241,33 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Indigo;
-            this.label3.Location = new System.Drawing.Point(12, 377);
+            this.label3.Location = new System.Drawing.Point(12, 324);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(322, 25);
             this.label3.TabIndex = 35;
             this.label3.Text = "Baby Sitter Registration Form";
             // 
+            // linkLabelLogin
+            // 
+            this.linkLabelLogin.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.linkLabelLogin.AutoSize = true;
+            this.linkLabelLogin.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabelLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabelLogin.LinkColor = System.Drawing.Color.DarkSlateBlue;
+            this.linkLabelLogin.Location = new System.Drawing.Point(187, 567);
+            this.linkLabelLogin.Name = "linkLabelLogin";
+            this.linkLabelLogin.Size = new System.Drawing.Size(147, 13);
+            this.linkLabelLogin.TabIndex = 41;
+            this.linkLabelLogin.TabStop = true;
+            this.linkLabelLogin.Text = "<< Back to  Admin Panel";
+            this.linkLabelLogin.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelLogin_LinkClicked);
+            // 
             // MaidBabyRegView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(343, 589);
             this.Controls.Add(this.jThinButtonBabyRegister);
             this.Controls.Add(this.jMaterialTextBabyRate);
@@ -263,8 +281,11 @@
             this.Controls.Add(this.jMaterialTextboxMaidName);
             this.Controls.Add(this.labelMaidName);
             this.Controls.Add(this.labelReg);
+            this.Controls.Add(this.linkLabelLogin);
+            this.DoubleBuffered = true;
             this.Name = "MaidBabyRegView";
             this.Text = "MaidBabyRegView";
+            this.Load += new System.EventHandler(this.MaidBabyRegView_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -284,5 +305,6 @@
         private JMaterialTextbox.JMaterialTextbox jMaterialTextboxBabyName;
         private System.Windows.Forms.Label labelBabyName;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.LinkLabel linkLabelLogin;
     }
 }

@@ -41,11 +41,11 @@
             // 
             this.labelAdmin.AutoSize = true;
             this.labelAdmin.BackColor = System.Drawing.Color.Transparent;
-            this.labelAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAdmin.Font = new System.Drawing.Font("Quicksand Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAdmin.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.labelAdmin.Location = new System.Drawing.Point(45, 467);
             this.labelAdmin.Name = "labelAdmin";
-            this.labelAdmin.Size = new System.Drawing.Size(59, 20);
+            this.labelAdmin.Size = new System.Drawing.Size(58, 18);
             this.labelAdmin.TabIndex = 7;
             this.labelAdmin.Text = "Admin";
             // 
@@ -53,11 +53,11 @@
             // 
             this.labelUser.AutoSize = true;
             this.labelUser.BackColor = System.Drawing.Color.Transparent;
-            this.labelUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUser.Font = new System.Drawing.Font("Quicksand Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelUser.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.labelUser.Location = new System.Drawing.Point(256, 467);
             this.labelUser.Name = "labelUser";
-            this.labelUser.Size = new System.Drawing.Size(47, 20);
+            this.labelUser.Size = new System.Drawing.Size(46, 18);
             this.labelUser.TabIndex = 9;
             this.labelUser.Text = "User";
             // 
@@ -65,11 +65,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Quicksand Bold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.label1.Location = new System.Drawing.Point(30, 147);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(291, 33);
+            this.label1.Size = new System.Drawing.Size(295, 33);
             this.label1.TabIndex = 10;
             this.label1.Text = "Welcome To OAPA!";
             // 
@@ -77,11 +77,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Quicksand Bold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.label2.Location = new System.Drawing.Point(114, 319);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(128, 29);
+            this.label2.Size = new System.Drawing.Size(127, 27);
             this.label2.TabIndex = 11;
             this.label2.Text = "Login As :";
             // 

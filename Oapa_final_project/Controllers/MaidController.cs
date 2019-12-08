@@ -32,5 +32,10 @@ namespace Oapa_final_project.Controllers
         {
             return db.Maids.GetAllMaids();
         }
+
+        public static Maid GetMaid(int id)
+        {
+            return db.Maids.GetMaid(id);
+        }
     }
 }

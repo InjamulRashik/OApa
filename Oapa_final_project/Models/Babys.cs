@@ -21,7 +21,7 @@ namespace Oapa_final_project.Models
         {
             Baby baby = null;
             conn.Open();
-            string query = "SELECT * FROM Maids WHERE BabyId='" + id + "'";
+            string query = "SELECT * FROM Babys WHERE BabyId='" + id + "'";
             SqlCommand cmd = new SqlCommand(query, conn);
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())

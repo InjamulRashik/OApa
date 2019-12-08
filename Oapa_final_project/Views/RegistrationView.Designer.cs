@@ -51,11 +51,11 @@
             // 
             this.labelReg.AutoSize = true;
             this.labelReg.BackColor = System.Drawing.Color.Transparent;
-            this.labelReg.Font = new System.Drawing.Font("Quicksand", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelReg.ForeColor = System.Drawing.Color.Indigo;
             this.labelReg.Location = new System.Drawing.Point(80, 141);
             this.labelReg.Name = "labelReg";
-            this.labelReg.Size = new System.Drawing.Size(198, 31);
+            this.labelReg.Size = new System.Drawing.Size(199, 25);
             this.labelReg.TabIndex = 15;
             this.labelReg.Text = "Registration Form";
             // 
@@ -63,11 +63,11 @@
             // 
             this.labelName.AutoSize = true;
             this.labelName.BackColor = System.Drawing.Color.Transparent;
-            this.labelName.Font = new System.Drawing.Font("Quicksand", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelName.ForeColor = System.Drawing.Color.Indigo;
             this.labelName.Location = new System.Drawing.Point(22, 203);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(61, 23);
+            this.labelName.Size = new System.Drawing.Size(62, 18);
             this.labelName.TabIndex = 16;
             this.labelName.Text = "Name :";
             this.labelName.Click += new System.EventHandler(this.labelName_Click);
@@ -75,8 +75,8 @@
             // jMaterialTextboxName
             // 
             this.jMaterialTextboxName.BackColor = System.Drawing.Color.Transparent;
-            this.jMaterialTextboxName.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.jMaterialTextboxName.Font_Size = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.jMaterialTextboxName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.jMaterialTextboxName.Font_Size = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.jMaterialTextboxName.ForeColors = System.Drawing.Color.Indigo;
             this.jMaterialTextboxName.HintText = "";
             this.jMaterialTextboxName.IsPassword = false;
@@ -99,11 +99,11 @@
             // 
             this.labelNumber.AutoSize = true;
             this.labelNumber.BackColor = System.Drawing.Color.Transparent;
-            this.labelNumber.Font = new System.Drawing.Font("Quicksand", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNumber.ForeColor = System.Drawing.Color.Indigo;
             this.labelNumber.Location = new System.Drawing.Point(22, 243);
             this.labelNumber.Name = "labelNumber";
-            this.labelNumber.Size = new System.Drawing.Size(77, 23);
+            this.labelNumber.Size = new System.Drawing.Size(77, 18);
             this.labelNumber.TabIndex = 18;
             this.labelNumber.Text = "Number :";
             // 
@@ -111,19 +111,19 @@
             // 
             this.labelGender.AutoSize = true;
             this.labelGender.BackColor = System.Drawing.Color.Transparent;
-            this.labelGender.Font = new System.Drawing.Font("Quicksand", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelGender.ForeColor = System.Drawing.Color.Indigo;
             this.labelGender.Location = new System.Drawing.Point(22, 320);
             this.labelGender.Name = "labelGender";
-            this.labelGender.Size = new System.Drawing.Size(71, 23);
+            this.labelGender.Size = new System.Drawing.Size(73, 18);
             this.labelGender.TabIndex = 20;
             this.labelGender.Text = "Gender :";
             // 
             // jMaterialTextboxNumber
             // 
             this.jMaterialTextboxNumber.BackColor = System.Drawing.Color.Transparent;
-            this.jMaterialTextboxNumber.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.jMaterialTextboxNumber.Font_Size = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.jMaterialTextboxNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.jMaterialTextboxNumber.Font_Size = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.jMaterialTextboxNumber.ForeColors = System.Drawing.Color.Indigo;
             this.jMaterialTextboxNumber.HintText = null;
             this.jMaterialTextboxNumber.IsPassword = false;
@@ -145,8 +145,8 @@
             // jMaterialTextboxPin
             // 
             this.jMaterialTextboxPin.BackColor = System.Drawing.Color.Transparent;
-            this.jMaterialTextboxPin.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.jMaterialTextboxPin.Font_Size = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.jMaterialTextboxPin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.jMaterialTextboxPin.Font_Size = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.jMaterialTextboxPin.ForeColors = System.Drawing.Color.Indigo;
             this.jMaterialTextboxPin.HintText = null;
             this.jMaterialTextboxPin.IsPassword = true;
@@ -169,11 +169,11 @@
             // 
             this.labelPin.AutoSize = true;
             this.labelPin.BackColor = System.Drawing.Color.Transparent;
-            this.labelPin.Font = new System.Drawing.Font("Quicksand", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPin.ForeColor = System.Drawing.Color.Indigo;
             this.labelPin.Location = new System.Drawing.Point(22, 285);
             this.labelPin.Name = "labelPin";
-            this.labelPin.Size = new System.Drawing.Size(40, 23);
+            this.labelPin.Size = new System.Drawing.Size(42, 18);
             this.labelPin.TabIndex = 19;
             this.labelPin.Text = "Pin :";
             // 
@@ -232,16 +232,17 @@
             this.comboBoxProf.Size = new System.Drawing.Size(147, 21);
             this.comboBoxProf.TabIndex = 26;
             this.comboBoxProf.Text = "Choose One";
+            //this.comboBoxProf.SelectedIndexChanged += new System.EventHandler(this.comboBoxProf_SelectedIndexChanged);
             // 
             // labelProf
             // 
             this.labelProf.AutoSize = true;
             this.labelProf.BackColor = System.Drawing.Color.Transparent;
-            this.labelProf.Font = new System.Drawing.Font("Quicksand", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelProf.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelProf.ForeColor = System.Drawing.Color.Indigo;
             this.labelProf.Location = new System.Drawing.Point(22, 359);
             this.labelProf.Name = "labelProf";
-            this.labelProf.Size = new System.Drawing.Size(94, 23);
+            this.labelProf.Size = new System.Drawing.Size(100, 18);
             this.labelProf.TabIndex = 27;
             this.labelProf.Text = "Profession :";
             // 

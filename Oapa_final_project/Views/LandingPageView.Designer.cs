@@ -35,9 +35,10 @@
             this.labelMaid = new System.Windows.Forms.Label();
             this.labelBaby = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.LabelNameShow = new System.Windows.Forms.Label();
             this.circularButtonBaby = new Oapa_final_project.CircularButton();
             this.circularButtonMaid = new Oapa_final_project.CircularButton();
-            this.LabelNameShow = new System.Windows.Forms.Label();
+            this.labelName1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,7 +60,7 @@
             this.labelWelcome.BackColor = System.Drawing.Color.Transparent;
             this.labelWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelWelcome.ForeColor = System.Drawing.Color.White;
-            this.labelWelcome.Location = new System.Drawing.Point(70, 197);
+            this.labelWelcome.Location = new System.Drawing.Point(40, 206);
             this.labelWelcome.Name = "labelWelcome";
             this.labelWelcome.Size = new System.Drawing.Size(104, 24);
             this.labelWelcome.TabIndex = 1;
@@ -80,11 +81,11 @@
             // 
             this.labelMaid.AutoSize = true;
             this.labelMaid.BackColor = System.Drawing.Color.Transparent;
-            this.labelMaid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMaid.Font = new System.Drawing.Font("Quicksand Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMaid.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.labelMaid.Location = new System.Drawing.Point(59, 501);
             this.labelMaid.Name = "labelMaid";
-            this.labelMaid.Size = new System.Drawing.Size(47, 20);
+            this.labelMaid.Size = new System.Drawing.Size(47, 18);
             this.labelMaid.TabIndex = 5;
             this.labelMaid.Text = "Maid";
             // 
@@ -92,11 +93,11 @@
             // 
             this.labelBaby.AutoSize = true;
             this.labelBaby.BackColor = System.Drawing.Color.Transparent;
-            this.labelBaby.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBaby.Font = new System.Drawing.Font("Quicksand Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelBaby.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.labelBaby.Location = new System.Drawing.Point(197, 501);
             this.labelBaby.Name = "labelBaby";
-            this.labelBaby.Size = new System.Drawing.Size(98, 20);
+            this.labelBaby.Size = new System.Drawing.Size(97, 18);
             this.labelBaby.TabIndex = 6;
             this.labelBaby.Text = "Baby Sitter";
             // 
@@ -104,13 +105,24 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Quicksand Bold Oblique", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.label1.Location = new System.Drawing.Point(82, 353);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(185, 20);
+            this.label1.Size = new System.Drawing.Size(182, 20);
             this.label1.TabIndex = 7;
             this.label1.Text = "Choose Your Service";
+            // 
+            // LabelNameShow
+            // 
+            this.LabelNameShow.AutoSize = true;
+            this.LabelNameShow.BackColor = System.Drawing.Color.Transparent;
+            this.LabelNameShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelNameShow.ForeColor = System.Drawing.Color.White;
+            this.LabelNameShow.Location = new System.Drawing.Point(180, 197);
+            this.LabelNameShow.Name = "LabelNameShow";
+            this.LabelNameShow.Size = new System.Drawing.Size(0, 24);
+            this.LabelNameShow.TabIndex = 8;
             // 
             // circularButtonBaby
             // 
@@ -145,16 +157,16 @@
             this.circularButtonMaid.UseVisualStyleBackColor = false;
             this.circularButtonMaid.Click += new System.EventHandler(this.circularButtonMaid_Click);
             // 
-            // LabelNameShow
+            // labelName1
             // 
-            this.LabelNameShow.AutoSize = true;
-            this.LabelNameShow.BackColor = System.Drawing.Color.Transparent;
-            this.LabelNameShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelNameShow.ForeColor = System.Drawing.Color.White;
-            this.LabelNameShow.Location = new System.Drawing.Point(180, 197);
-            this.LabelNameShow.Name = "LabelNameShow";
-            this.LabelNameShow.Size = new System.Drawing.Size(0, 24);
-            this.LabelNameShow.TabIndex = 8;
+            this.labelName1.AutoSize = true;
+            this.labelName1.BackColor = System.Drawing.Color.Transparent;
+            this.labelName1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelName1.ForeColor = System.Drawing.Color.White;
+            this.labelName1.Location = new System.Drawing.Point(150, 206);
+            this.labelName1.Name = "labelName1";
+            this.labelName1.Size = new System.Drawing.Size(0, 24);
+            this.labelName1.TabIndex = 9;
             // 
             // LandingPageView
             // 
@@ -163,6 +175,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(343, 589);
+            this.Controls.Add(this.labelName1);
             this.Controls.Add(this.LabelNameShow);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labelBaby);
@@ -177,6 +190,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LandingPage";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormClosingEvent);
+            this.Load += new System.EventHandler(this.LandingPageView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -194,5 +208,6 @@
         private System.Windows.Forms.Label labelBaby;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label LabelNameShow;
+        private System.Windows.Forms.Label labelName1;
     }
 }
