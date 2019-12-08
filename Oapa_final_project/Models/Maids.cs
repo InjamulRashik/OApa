@@ -54,5 +54,19 @@ namespace Oapa_final_project.Models
             return maid;
         }
 
+        public bool AddMaid(Maid maid)
+        {
+            //add maid into database
+
+            conn.Open();
+            string query = "INSERT INTO Maids (MaidName,MaidRate) VALUES('" + maid.MaidName + "','" + maid.MaidRate + "')";
+            Console.WriteLine(query);
+
+            SqlCommand cmd = new SqlCommand(query, conn);
+            int result = cmd.ExecuteNonQuery();
+            conn.Close();
+            if (result != 0) return true;
+            else return false;
+        }
     }
 }

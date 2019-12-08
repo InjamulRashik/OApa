@@ -14,7 +14,7 @@ namespace Oapa_final_project.Views
 {
     public partial class AdminLandingPageView : Form
     {
-        public AdminLandingPageView()
+        public AdminLandingPageView(dynamic result)
         {
             InitializeComponent();
 

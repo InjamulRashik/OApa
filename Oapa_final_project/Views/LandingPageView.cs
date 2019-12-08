@@ -40,8 +40,8 @@ namespace Oapa_final_project
 
         private void circularButtonMaid_Click(object sender, EventArgs e)
         {
-            MaidView maid = new MaidView();
-            maid.Show();
+            //MaidView maid = new MaidView();
+            //maid.Show();
         }
     }
 }

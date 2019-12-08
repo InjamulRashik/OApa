@@ -23,8 +23,9 @@ namespace Oapa_final_project.Views
             var result = AdminLoginController.AuthenticateAdmin(jMetroTextBoxAdminId.TextName,jMetroTextBoxAdminPassword.TextName);
             if (result != null)
             {
-                MessageBox.Show("Success", "Alert");
-                //new AdminLandingPageView(result).Show();
+                this.Hide();
+                //MessageBox.Show("Success", "Alert");
+                new AdminLandingPageView(result).Show();
 
             }
             else

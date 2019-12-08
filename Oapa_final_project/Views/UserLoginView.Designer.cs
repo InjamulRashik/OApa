@@ -43,13 +43,13 @@
             this.jMetroTextBoxPin.BorderColor = System.Drawing.Color.Indigo;
             this.jMetroTextBoxPin.BorderRadius = 10;
             this.jMetroTextBoxPin.FillColor = System.Drawing.SystemColors.Control;
-            this.jMetroTextBoxPin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.jMetroTextBoxPin.Font_Size = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.jMetroTextBoxPin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.jMetroTextBoxPin.Font_Size = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.jMetroTextBoxPin.ForeColors = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.jMetroTextBoxPin.IsPassword = true;
             this.jMetroTextBoxPin.LineThickness = 2;
             this.jMetroTextBoxPin.Location = new System.Drawing.Point(79, 311);
-            this.jMetroTextBoxPin.Margin = new System.Windows.Forms.Padding(5);
+            this.jMetroTextBoxPin.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.jMetroTextBoxPin.MaxLength = 32767;
             this.jMetroTextBoxPin.MouseOnHover = System.Drawing.Color.Purple;
             this.jMetroTextBoxPin.Name = "jMetroTextBoxPin";
@@ -69,13 +69,13 @@
             this.jMetroTextBoxNumber.BorderColor = System.Drawing.Color.Indigo;
             this.jMetroTextBoxNumber.BorderRadius = 10;
             this.jMetroTextBoxNumber.FillColor = System.Drawing.SystemColors.Control;
-            this.jMetroTextBoxNumber.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.jMetroTextBoxNumber.Font_Size = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.jMetroTextBoxNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.jMetroTextBoxNumber.Font_Size = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.jMetroTextBoxNumber.ForeColors = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.jMetroTextBoxNumber.IsPassword = false;
             this.jMetroTextBoxNumber.LineThickness = 2;
             this.jMetroTextBoxNumber.Location = new System.Drawing.Point(79, 202);
-            this.jMetroTextBoxNumber.Margin = new System.Windows.Forms.Padding(5);
+            this.jMetroTextBoxNumber.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.jMetroTextBoxNumber.MaxLength = 32767;
             this.jMetroTextBoxNumber.MouseOnHover = System.Drawing.Color.Purple;
             this.jMetroTextBoxNumber.Name = "jMetroTextBoxNumber";
@@ -94,11 +94,11 @@
             this.linkLabelRegister.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.linkLabelRegister.AutoSize = true;
             this.linkLabelRegister.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabelRegister.Font = new System.Drawing.Font("Quicksand Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabelRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabelRegister.LinkColor = System.Drawing.Color.Purple;
             this.linkLabelRegister.Location = new System.Drawing.Point(47, 548);
             this.linkLabelRegister.Name = "linkLabelRegister";
-            this.linkLabelRegister.Size = new System.Drawing.Size(241, 16);
+            this.linkLabelRegister.Size = new System.Drawing.Size(230, 13);
             this.linkLabelRegister.TabIndex = 16;
             this.linkLabelRegister.TabStop = true;
             this.linkLabelRegister.Text = "Haven\'t Registered Yet? Register Now!";
@@ -108,11 +108,11 @@
             // 
             this.labelPinLog.AutoSize = true;
             this.labelPinLog.BackColor = System.Drawing.Color.Transparent;
-            this.labelPinLog.Font = new System.Drawing.Font("Quicksand", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPinLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPinLog.ForeColor = System.Drawing.Color.Purple;
             this.labelPinLog.Location = new System.Drawing.Point(59, 261);
             this.labelPinLog.Name = "labelPinLog";
-            this.labelPinLog.Size = new System.Drawing.Size(217, 28);
+            this.labelPinLog.Size = new System.Drawing.Size(227, 24);
             this.labelPinLog.TabIndex = 15;
             this.labelPinLog.Text = "Enter Your Pin Number";
             this.labelPinLog.Click += new System.EventHandler(this.labelPin_Click);
@@ -121,11 +121,11 @@
             // 
             this.labelNumberLog.AutoSize = true;
             this.labelNumberLog.BackColor = System.Drawing.Color.Transparent;
-            this.labelNumberLog.Font = new System.Drawing.Font("Quicksand", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNumberLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNumberLog.ForeColor = System.Drawing.Color.Purple;
             this.labelNumberLog.Location = new System.Drawing.Point(44, 152);
             this.labelNumberLog.Name = "labelNumberLog";
-            this.labelNumberLog.Size = new System.Drawing.Size(247, 28);
+            this.labelNumberLog.Size = new System.Drawing.Size(258, 24);
             this.labelNumberLog.TabIndex = 14;
             this.labelNumberLog.Text = "Enter Your Phone Number";
             this.labelNumberLog.Click += new System.EventHandler(this.labelNumberLog_Click);
@@ -152,7 +152,7 @@
             this.jThinButtonUserLogin.TabIndex = 19;
             this.jThinButtonUserLogin.Click += new System.EventHandler(this.jThinButtonUserLogin_Click);
             // 
-            // UserLogin
+            // UserLoginView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -166,7 +166,7 @@
             this.Controls.Add(this.labelPinLog);
             this.Controls.Add(this.labelNumberLog);
             this.DoubleBuffered = true;
-            this.Name = "UserLogin";
+            this.Name = "UserLoginView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "User Login";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormClosingEvent);

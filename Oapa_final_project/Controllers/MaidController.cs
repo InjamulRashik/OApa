@@ -11,6 +11,22 @@ namespace Oapa_final_project.Controllers
     class MaidController
     {
        static Database db = new Database();
+        public static bool AddMaid(string mname, string mrate)
+        {
+            //object sel = comboBoxProf.SelectedValue;
+
+            Maid m = new Maid();
+            m.MaidName = mname;
+            m.MaidRate = mrate;
+            
+
+
+
+            /*var result = db.Users.AddUser(u);
+            if (result) return true;
+            else return false;*/
+            return db.Maids.AddMaid(m);
+        }
 
         public static ArrayList GetAllMaids()
         {

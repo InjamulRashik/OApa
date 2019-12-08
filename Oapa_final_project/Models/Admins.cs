@@ -19,7 +19,7 @@ namespace Oapa_final_project.Models
         {
             Admin admin = null;
             conn.Open();
-            string query = "SELECT * FROM Users WHERE Name='" + name + "' and Password='" + password + "'";
+            string query = "SELECT * FROM Admins WHERE Name='" + name + "' and Password='" + password + "'";
             SqlCommand cmd = new SqlCommand(query, conn);
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())

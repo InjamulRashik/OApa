@@ -53,5 +53,22 @@ namespace Oapa_final_project.Models
             conn.Close();
             return baby;
         }
+
+        public bool AddBaby(Baby baby)
+        {
+            //add maid into database
+
+            conn.Open();
+            string query = "INSERT INTO Babys (BabyName,BabyRate) VALUES('" + baby.BabyName + "','" + baby.BabyRate + "')";
+            Console.WriteLine(query);
+
+            SqlCommand cmd = new SqlCommand(query, conn);
+            int result = cmd.ExecuteNonQuery();
+            conn.Close();
+            if (result != 0) return true;
+            else return false;
+
+        }
     }
-}
+
+    }

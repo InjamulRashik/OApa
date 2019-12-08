@@ -115,12 +115,6 @@
     <Compile Include="Views\HomePageView.Designer.cs">
       <DependentUpon>HomePageView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\MaidView.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\MaidView.Designer.cs">
-      <DependentUpon>MaidView.cs</DependentUpon>
-    </Compile>
     <Compile Include="Views\BabyView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +126,12 @@
     </Compile>
     <Compile Include="Views\LandingPageView.Designer.cs">
       <DependentUpon>LandingPageView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MaidBabyRegView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MaidBabyRegView.Designer.cs">
+      <DependentUpon>MaidBabyRegView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\PaySlipView.cs">
       <SubType>Form</SubType>
@@ -174,9 +174,6 @@
     <EmbeddedResource Include="Views\HomePageView.resx">
       <DependentUpon>HomePageView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\MaidView.resx">
-      <DependentUpon>MaidView.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Views\BabyView.resx">
       <DependentUpon>BabyView.cs</DependentUpon>
     </EmbeddedResource>
@@ -192,6 +189,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\MaidBabyRegView.resx">
+      <DependentUpon>MaidBabyRegView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\PaySlipView.resx">
       <DependentUpon>PaySlipView.cs</DependentUpon>
     </EmbeddedResource>
