@@ -70,7 +70,7 @@
             this.jMetroTextBoxAdminPassword.IsPassword = true;
             this.jMetroTextBoxAdminPassword.LineThickness = 2;
             this.jMetroTextBoxAdminPassword.Location = new System.Drawing.Point(83, 315);
-            this.jMetroTextBoxAdminPassword.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.jMetroTextBoxAdminPassword.Margin = new System.Windows.Forms.Padding(5);
             this.jMetroTextBoxAdminPassword.MaxLength = 32767;
             this.jMetroTextBoxAdminPassword.MouseOnHover = System.Drawing.Color.Purple;
             this.jMetroTextBoxAdminPassword.Name = "jMetroTextBoxAdminPassword";
@@ -95,7 +95,7 @@
             this.jMetroTextBoxAdminId.IsPassword = false;
             this.jMetroTextBoxAdminId.LineThickness = 2;
             this.jMetroTextBoxAdminId.Location = new System.Drawing.Point(83, 206);
-            this.jMetroTextBoxAdminId.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.jMetroTextBoxAdminId.Margin = new System.Windows.Forms.Padding(5);
             this.jMetroTextBoxAdminId.MaxLength = 32767;
             this.jMetroTextBoxAdminId.MouseOnHover = System.Drawing.Color.Purple;
             this.jMetroTextBoxAdminId.Name = "jMetroTextBoxAdminId";
@@ -146,6 +146,7 @@
             this.Controls.Add(this.labelNumberLog);
             this.DoubleBuffered = true;
             this.Name = "AdminLoginView";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminLoginView";
             this.ResumeLayout(false);
             this.PerformLayout();

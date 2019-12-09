@@ -15,9 +15,11 @@ namespace Oapa_final_project.Views
     public partial class BabyView : Form
     {
         public static string passRate = null;
-        public BabyView()
+        User user;
+        public BabyView(dynamic user)
         {
             InitializeComponent();
+            this.user = user;
 
             var babyList = BabyController.GetAllBabys();
 
@@ -77,6 +79,12 @@ namespace Oapa_final_project.Views
             labelBabyRate.Text = bb.BabyRate;
             passRate = bb.BabyRate;
 
+        }
+
+        private void linkLabelLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Close();
+            new LandingPageView(user).Show();
         }
     }
 }

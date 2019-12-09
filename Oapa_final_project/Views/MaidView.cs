@@ -15,9 +15,12 @@ namespace Oapa_final_project.Views
     public partial class MaidView : Form
     {
         public static string passRate = null;
-        public MaidView()
+        User user;
+        
+        public MaidView(dynamic user)
         {
             InitializeComponent();
+            this.user = user;
 
             var maidList = MaidController.GetAllMaids();
 
@@ -80,6 +83,13 @@ namespace Oapa_final_project.Views
                 new PayCalView(passRate).Show();
                 this.Hide();
             }
+        }
+
+        private void linkLabelLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Close();
+            new LandingPageView(user).Show();
+
         }
     }
 }

@@ -55,7 +55,7 @@ namespace Oapa_final_project.Views
         {
             //this.Close();
             //new LandingPageView(result).Show();
-            this.Hide();
+            Application.Exit();
             
             
         }

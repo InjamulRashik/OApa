@@ -132,6 +132,7 @@
             this.Controls.Add(this.circularButtonAdmin);
             this.DoubleBuffered = true;
             this.Name = "HomePageView";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HomePageView";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormClosingClicked);
             this.ResumeLayout(false);

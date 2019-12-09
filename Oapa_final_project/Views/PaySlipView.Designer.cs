@@ -368,6 +368,7 @@
             this.Controls.Add(this.richTextBoxPaymentSlip);
             this.DoubleBuffered = true;
             this.Name = "PaySlipView";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PayCalView";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormClosingClicked);
             this.Load += new System.EventHandler(this.PaySlipView_Load);

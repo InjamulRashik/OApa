@@ -1,4 +1,5 @@
 ﻿using Oapa_final_project.Controllers;
+using Oapa_final_project.Models;
 using Oapa_final_project.Views;
 using System;
 using System.Collections.Generic;
@@ -14,10 +15,14 @@ namespace Oapa_final_project
 {
     public partial class LandingPageView : Form
     {
+
+        User user;
+
         public LandingPageView(dynamic user)
         {
             InitializeComponent();
             labelName1.Text = user.Name;
+            this.user = user;
 
         }
 
@@ -34,15 +39,13 @@ namespace Oapa_final_project
         private void circularButtonBaby_Click(object sender, EventArgs e)
         {
             this.Hide();
-            BabyView baby = new BabyView();
-            baby.Show();
+            new BabyView(user).Show();
 
         }
 
         private void circularButtonMaid_Click(object sender, EventArgs e)
         {
-            MaidView maid = new MaidView();
-            maid.Show();
+            new MaidView(user).Show();
             this.Hide();
         }
 

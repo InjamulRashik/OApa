@@ -178,6 +178,7 @@
             this.Controls.Add(this.labelWelcome);
             this.DoubleBuffered = true;
             this.Name = "AdminLandingPageView";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminLandingPage";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

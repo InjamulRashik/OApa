@@ -53,11 +53,11 @@
             // 
             this.labelMin.AutoSize = true;
             this.labelMin.BackColor = System.Drawing.Color.Transparent;
-            this.labelMin.Font = new System.Drawing.Font("Quicksand", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMin.ForeColor = System.Drawing.Color.White;
             this.labelMin.Location = new System.Drawing.Point(136, 160);
             this.labelMin.Name = "labelMin";
-            this.labelMin.Size = new System.Drawing.Size(70, 55);
+            this.labelMin.Size = new System.Drawing.Size(62, 42);
             this.labelMin.TabIndex = 3;
             this.labelMin.Text = "00";
             // 
@@ -65,11 +65,11 @@
             // 
             this.labelSec.AutoSize = true;
             this.labelSec.BackColor = System.Drawing.Color.Transparent;
-            this.labelSec.Font = new System.Drawing.Font("Quicksand", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSec.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSec.ForeColor = System.Drawing.Color.White;
             this.labelSec.Location = new System.Drawing.Point(240, 160);
             this.labelSec.Name = "labelSec";
-            this.labelSec.Size = new System.Drawing.Size(70, 55);
+            this.labelSec.Size = new System.Drawing.Size(62, 42);
             this.labelSec.TabIndex = 6;
             this.labelSec.Text = "00";
             // 
@@ -77,11 +77,11 @@
             // 
             this.labelCs.AutoSize = true;
             this.labelCs.BackColor = System.Drawing.Color.Transparent;
-            this.labelCs.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCs.ForeColor = System.Drawing.Color.White;
             this.labelCs.Location = new System.Drawing.Point(307, 182);
             this.labelCs.Name = "labelCs";
-            this.labelCs.Size = new System.Drawing.Size(30, 24);
+            this.labelCs.Size = new System.Drawing.Size(29, 20);
             this.labelCs.TabIndex = 7;
             this.labelCs.Text = "00";
             // 
@@ -89,22 +89,22 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Quicksand", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(206, 157);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(34, 55);
+            this.label2.Size = new System.Drawing.Size(29, 42);
             this.label2.TabIndex = 8;
             this.label2.Text = ":";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Quicksand", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.label4.Location = new System.Drawing.Point(301, 34);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 55);
+            this.label4.Size = new System.Drawing.Size(0, 42);
             this.label4.TabIndex = 9;
             // 
             // timer1
@@ -117,11 +117,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Quicksand", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(102, 157);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 55);
+            this.label1.Size = new System.Drawing.Size(29, 42);
             this.label1.TabIndex = 12;
             this.label1.Text = ":";
             // 
@@ -129,11 +129,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Quicksand", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(32, 160);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 55);
+            this.label3.Size = new System.Drawing.Size(62, 42);
             this.label3.TabIndex = 11;
             this.label3.Text = "00";
             // 
@@ -141,11 +141,11 @@
             // 
             this.labelMM.AutoSize = true;
             this.labelMM.BackColor = System.Drawing.Color.Transparent;
-            this.labelMM.Font = new System.Drawing.Font("Quicksand", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMM.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMM.ForeColor = System.Drawing.Color.Transparent;
             this.labelMM.Location = new System.Drawing.Point(128, 140);
             this.labelMM.Name = "labelMM";
-            this.labelMM.Size = new System.Drawing.Size(82, 31);
+            this.labelMM.Size = new System.Drawing.Size(83, 25);
             this.labelMM.TabIndex = 44;
             this.labelMM.Text = "Minute";
             // 
@@ -153,11 +153,11 @@
             // 
             this.labelSS.AutoSize = true;
             this.labelSS.BackColor = System.Drawing.Color.Transparent;
-            this.labelSS.Font = new System.Drawing.Font("Quicksand", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSS.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSS.ForeColor = System.Drawing.Color.White;
             this.labelSS.Location = new System.Drawing.Point(229, 140);
             this.labelSS.Name = "labelSS";
-            this.labelSS.Size = new System.Drawing.Size(89, 31);
+            this.labelSS.Size = new System.Drawing.Size(91, 25);
             this.labelSS.TabIndex = 43;
             this.labelSS.Text = "Second";
             // 
@@ -165,11 +165,11 @@
             // 
             this.labelHH.AutoSize = true;
             this.labelHH.BackColor = System.Drawing.Color.Transparent;
-            this.labelHH.Font = new System.Drawing.Font("Quicksand", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHH.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelHH.ForeColor = System.Drawing.Color.White;
             this.labelHH.Location = new System.Drawing.Point(41, 140);
             this.labelHH.Name = "labelHH";
-            this.labelHH.Size = new System.Drawing.Size(63, 31);
+            this.labelHH.Size = new System.Drawing.Size(62, 25);
             this.labelHH.TabIndex = 42;
             this.labelHH.Text = "Hour";
             // 
@@ -276,6 +276,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "QRView";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QR Timer";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxQR)).EndInit();
             this.ResumeLayout(false);

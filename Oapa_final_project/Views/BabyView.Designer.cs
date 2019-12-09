@@ -37,6 +37,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.ComboBoxBaby = new System.Windows.Forms.ComboBox();
+            this.linkLabelLogin = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // jThinButtonShowSelect
@@ -144,6 +145,21 @@
             this.ComboBoxBaby.Text = "Select Baby Sitter";
             this.ComboBoxBaby.SelectedIndexChanged += new System.EventHandler(this.ComboBoxBaby_SelectedIndexChanged);
             // 
+            // linkLabelLogin
+            // 
+            this.linkLabelLogin.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.linkLabelLogin.AutoSize = true;
+            this.linkLabelLogin.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabelLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabelLogin.LinkColor = System.Drawing.Color.DarkSlateBlue;
+            this.linkLabelLogin.Location = new System.Drawing.Point(193, 567);
+            this.linkLabelLogin.Name = "linkLabelLogin";
+            this.linkLabelLogin.Size = new System.Drawing.Size(138, 13);
+            this.linkLabelLogin.TabIndex = 44;
+            this.linkLabelLogin.TabStop = true;
+            this.linkLabelLogin.Text = "<< Back to Home Page";
+            this.linkLabelLogin.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelLogin_LinkClicked);
+            // 
             // BabyView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -151,6 +167,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(343, 589);
+            this.Controls.Add(this.linkLabelLogin);
             this.Controls.Add(this.jThinButtonShowSelect);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.labelBabyRate);
@@ -161,6 +178,7 @@
             this.Controls.Add(this.ComboBoxBaby);
             this.DoubleBuffered = true;
             this.Name = "BabyView";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BabyView";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -177,5 +195,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.ComboBox ComboBoxBaby;
+        private System.Windows.Forms.LinkLabel linkLabelLogin;
     }
 }

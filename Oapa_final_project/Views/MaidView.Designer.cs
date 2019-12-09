@@ -37,6 +37,7 @@
             this.labelMaidRate = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.jThinButtonShowSelect = new JThinButton.JThinButton();
+            this.linkLabelLogin = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // ComboBoxBaby
@@ -145,6 +146,21 @@
             this.jThinButtonShowSelect.TabIndex = 35;
             this.jThinButtonShowSelect.Click += new System.EventHandler(this.jThinButtonShowSelect_Click);
             // 
+            // linkLabelLogin
+            // 
+            this.linkLabelLogin.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.linkLabelLogin.AutoSize = true;
+            this.linkLabelLogin.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabelLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabelLogin.LinkColor = System.Drawing.Color.DarkSlateBlue;
+            this.linkLabelLogin.Location = new System.Drawing.Point(193, 567);
+            this.linkLabelLogin.Name = "linkLabelLogin";
+            this.linkLabelLogin.Size = new System.Drawing.Size(138, 13);
+            this.linkLabelLogin.TabIndex = 38;
+            this.linkLabelLogin.TabStop = true;
+            this.linkLabelLogin.Text = "<< Back to Home Page";
+            this.linkLabelLogin.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelLogin_LinkClicked);
+            // 
             // MaidView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -152,6 +168,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(343, 589);
+            this.Controls.Add(this.linkLabelLogin);
             this.Controls.Add(this.jThinButtonShowSelect);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.labelMaidRate);
@@ -162,6 +179,7 @@
             this.Controls.Add(this.ComboBoxBaby);
             this.DoubleBuffered = true;
             this.Name = "MaidView";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MaidView";
             this.Load += new System.EventHandler(this.MaidView_Load);
             this.ResumeLayout(false);
@@ -179,5 +197,6 @@
         private System.Windows.Forms.Label labelMaidRate;
         private System.Windows.Forms.Label label3;
         private JThinButton.JThinButton jThinButtonShowSelect;
+        private System.Windows.Forms.LinkLabel linkLabelLogin;
     }
 }
