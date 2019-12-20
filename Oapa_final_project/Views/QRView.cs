@@ -17,7 +17,7 @@ namespace Oapa_final_project.Views
         int timeCs, timeSec, timeMin , timeHour;
         bool isActive;
         public static int passValueMin;
-        public static  int passValueSec;
+        public static int passValueSec;
         public static string passRate;
         Camera camera;
         Timer t;
