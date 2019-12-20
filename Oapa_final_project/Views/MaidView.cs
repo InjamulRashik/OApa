@@ -50,6 +50,7 @@ namespace Oapa_final_project.Views
             labelMaidName.Text = md.MaidName;
             labelMaidRate.Text = md.MaidRate;
             passRate = md.MaidRate;
+            //workdone
         }
 
         private void MaidView_Load(object sender, EventArgs e)
