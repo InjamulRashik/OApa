@@ -11,6 +11,7 @@ using Oapa_final_project.Models;
 using Oapa_final_project.Controllers;
 using System.Data.SqlClient;
 using System.Collections;
+using Oapa_final_project.Views;
 
 namespace Oapa_final_project.Models
 {
@@ -81,11 +82,14 @@ namespace Oapa_final_project.Models
             //add user into database
 
             conn.Open();
+            
             string query = "INSERT INTO Users (Name,Number,Pin,Gender,Profession) VALUES('" + user.Name + "','" + user.Number + "','" + user.Pin + "','" + user.Gender + "','" + user.Profession + "')";
             Console.WriteLine(query);
 
             SqlCommand cmd = new SqlCommand(query, conn);
+            
             int result = cmd.ExecuteNonQuery();
+
             conn.Close();
             if (result != 0) return true;
             else return false;

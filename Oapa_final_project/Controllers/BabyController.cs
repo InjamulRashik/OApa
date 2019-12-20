@@ -10,15 +10,18 @@ namespace Oapa_final_project.Controllers
 {
     class BabyController
     {
-
         static Database db = new Database();
-        public static bool AddBaby(string bname, string brate)
+        public static bool AddBaby(string bid, string bname, string brate)
         {
             //object sel = comboBoxProf.SelectedValue;
 
             Baby b = new Baby();
+            b.BabyId = bid;
             b.BabyName = bname;
             b.BabyRate = brate;
+
+
+
 
 
 
@@ -33,9 +36,12 @@ namespace Oapa_final_project.Controllers
         {
             return db.Babys.GetAllBabys();
         }
+
         public static Baby GetBaby(int id)
         {
             return db.Babys.GetBaby(id);
         }
+
+
     }
 }

@@ -48,7 +48,15 @@ namespace Oapa_final_project.Views
             }
             else
             {
-                MessageBox.Show("Failure", "Alert");
+
+               DialogResult result1 =  MessageBox.Show("Number/Pin Does not Match", "Alert");
+                if (result1 == DialogResult.OK)
+                {
+
+                    UserLoginView userLoginView = new UserLoginView();
+                    userLoginView.Show();
+
+                }
             }
         }
 

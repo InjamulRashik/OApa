@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Oapa_final_project.Models
 {
-    class Maid
+    class BabyHireInfo
     {
-        public string MaidId { get; set; }
-        public string MaidName { get; set; }
-        public string MaidRate { get; set; }
-    } 
+        public int Serial { get; set; }
+        public string Name { get; set; }
+        public string BabyName { get; set; }
+    }
 }

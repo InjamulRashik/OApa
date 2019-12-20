@@ -39,6 +39,8 @@
             this.circularButtonBaby = new Oapa_final_project.CircularButton();
             this.circularButtonMaid = new Oapa_final_project.CircularButton();
             this.labelName1 = new System.Windows.Forms.Label();
+            this.linkLabelLogin = new System.Windows.Forms.LinkLabel();
+            this.labelName2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,7 +62,7 @@
             this.labelWelcome.BackColor = System.Drawing.Color.Transparent;
             this.labelWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelWelcome.ForeColor = System.Drawing.Color.White;
-            this.labelWelcome.Location = new System.Drawing.Point(40, 206);
+            this.labelWelcome.Location = new System.Drawing.Point(58, 206);
             this.labelWelcome.Name = "labelWelcome";
             this.labelWelcome.Size = new System.Drawing.Size(104, 24);
             this.labelWelcome.TabIndex = 1;
@@ -168,6 +170,32 @@
             this.labelName1.Size = new System.Drawing.Size(0, 24);
             this.labelName1.TabIndex = 9;
             // 
+            // linkLabelLogin
+            // 
+            this.linkLabelLogin.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.linkLabelLogin.AutoSize = true;
+            this.linkLabelLogin.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabelLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabelLogin.LinkColor = System.Drawing.Color.DarkSlateBlue;
+            this.linkLabelLogin.Location = new System.Drawing.Point(6, 567);
+            this.linkLabelLogin.Name = "linkLabelLogin";
+            this.linkLabelLogin.Size = new System.Drawing.Size(130, 13);
+            this.linkLabelLogin.TabIndex = 38;
+            this.linkLabelLogin.TabStop = true;
+            this.linkLabelLogin.Text = "Show Hire Histrory >>";
+            this.linkLabelLogin.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelLogin_LinkClicked);
+            // 
+            // labelName2
+            // 
+            this.labelName2.AutoSize = true;
+            this.labelName2.BackColor = System.Drawing.Color.Transparent;
+            this.labelName2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelName2.ForeColor = System.Drawing.Color.White;
+            this.labelName2.Location = new System.Drawing.Point(160, 206);
+            this.labelName2.Name = "labelName2";
+            this.labelName2.Size = new System.Drawing.Size(0, 24);
+            this.labelName2.TabIndex = 39;
+            // 
             // LandingPageView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -175,6 +203,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(343, 589);
+            this.Controls.Add(this.labelName2);
+            this.Controls.Add(this.linkLabelLogin);
             this.Controls.Add(this.labelName1);
             this.Controls.Add(this.LabelNameShow);
             this.Controls.Add(this.label1);
@@ -190,7 +220,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LandingPage";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormClosingEvent);
-            this.Load += new System.EventHandler(this.LandingPageView_Load);
+            //this.Load += new System.EventHandler(this.LandingPageView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -209,5 +239,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label LabelNameShow;
         private System.Windows.Forms.Label labelName1;
+        private System.Windows.Forms.LinkLabel linkLabelLogin;
+        private System.Windows.Forms.Label labelName2;
     }
 }

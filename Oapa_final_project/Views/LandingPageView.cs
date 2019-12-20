@@ -17,18 +17,20 @@ namespace Oapa_final_project
     {
 
         User user;
+        
 
         public LandingPageView(dynamic user)
         {
             InitializeComponent();
-            labelName1.Text = user.Name;
-            this.user = user;
 
+            this.user = user;
+            labelName2.Text = user.Name;
+            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void FormClosingEvent(object sender, FormClosingEventArgs e)
@@ -49,9 +51,12 @@ namespace Oapa_final_project
             this.Hide();
         }
 
-        private void LandingPageView_Load(object sender, EventArgs e)
+        private void linkLabelLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            this.Hide();
+            new UserHireHistoryView(user).Show();
         }
+
+       
     }
 }

@@ -21,6 +21,7 @@ namespace Oapa_final_project.Views
         {
             InitializeComponent();
             this.user = user;
+            labelUserName.Text = user.Name;
 
             var maidList = MaidController.GetAllMaids();
 
@@ -46,7 +47,6 @@ namespace Oapa_final_project.Views
 
             int id = Int32.Parse(ids);
             Maid md = MaidController.GetMaid(id);
-
             labelMaidName.Text = md.MaidName;
             labelMaidRate.Text = md.MaidRate;
             passRate = md.MaidRate;
@@ -78,8 +78,11 @@ namespace Oapa_final_project.Views
 
         private void jThinButtonShowSelect_Click(object sender, EventArgs e)
         {
+            var result = MaidInfoController.AddInfo(labelUserName.Text,labelMaidName.Text);
+
             if (passRate != null)
             {
+                
                 new PayCalView(passRate).Show();
                 this.Hide();
             }

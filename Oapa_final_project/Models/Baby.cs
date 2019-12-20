@@ -8,7 +8,7 @@ namespace Oapa_final_project.Models
 {
     class Baby
     {
-        public int BabyId { get; set; }
+        public string BabyId { get; set; }
         public string BabyName { get; set; }
         public string BabyRate { get; set; }
     }

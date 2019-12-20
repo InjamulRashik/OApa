@@ -12,6 +12,9 @@ namespace Oapa_final_project.Models
         public Admins Admins { get; set; }
         public Maids Maids { get; set; }
         public Babys Babys { get; set; }
+        public MaidHireInfos Mihs { get; set; }
+        public BabyHireInfos Bihs { get; set; }
+
 
         public Database()
         {
@@ -19,6 +22,10 @@ namespace Oapa_final_project.Models
             Admins = new Admins();
             Maids = new Maids();
             Babys = new Babys();
+            Mihs = new MaidHireInfos();
+            Bihs = new BabyHireInfos();
+
+            
         }
     }
 }

@@ -12,10 +12,9 @@ namespace Oapa_final_project.Controllers
     {
         static Database db = new Database();
         
-        public static bool AddUser(string name, string number, string pin, string gender, string profession)
+        public static bool AddUser(string name, string number, string pin,string gender, string profession)
         {
-            //object sel = comboBoxProf.SelectedValue;
-
+            //object sel = comboBoxProf.SelectedValue
             User u = new User();
             u.Name = name;
             u.Number = number;

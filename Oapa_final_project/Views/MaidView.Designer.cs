@@ -38,6 +38,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.jThinButtonShowSelect = new JThinButton.JThinButton();
             this.linkLabelLogin = new System.Windows.Forms.LinkLabel();
+            this.labelName = new System.Windows.Forms.Label();
+            this.labelUserName = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // ComboBoxBaby
@@ -45,7 +47,7 @@
             this.ComboBoxBaby.Font = new System.Drawing.Font("Quicksand Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBoxBaby.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.ComboBoxBaby.FormattingEnabled = true;
-            this.ComboBoxBaby.Location = new System.Drawing.Point(58, 200);
+            this.ComboBoxBaby.Location = new System.Drawing.Point(58, 212);
             this.ComboBoxBaby.Name = "ComboBoxBaby";
             this.ComboBoxBaby.Size = new System.Drawing.Size(218, 26);
             this.ComboBoxBaby.TabIndex = 0;
@@ -54,7 +56,7 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(44, 258);
+            this.richTextBox1.Location = new System.Drawing.Point(44, 270);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(246, 98);
             this.richTextBox1.TabIndex = 1;
@@ -139,7 +141,7 @@
             this.jThinButtonShowSelect.HoverBorder = System.Drawing.Color.Purple;
             this.jThinButtonShowSelect.HoverFontColor = System.Drawing.SystemColors.Desktop;
             this.jThinButtonShowSelect.LineThickness = 2;
-            this.jThinButtonShowSelect.Location = new System.Drawing.Point(119, 388);
+            this.jThinButtonShowSelect.Location = new System.Drawing.Point(119, 400);
             this.jThinButtonShowSelect.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.jThinButtonShowSelect.Name = "jThinButtonShowSelect";
             this.jThinButtonShowSelect.Size = new System.Drawing.Size(97, 40);
@@ -161,6 +163,31 @@
             this.linkLabelLogin.Text = "<< Back to Home Page";
             this.linkLabelLogin.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelLogin_LinkClicked);
             // 
+            // labelName
+            // 
+            this.labelName.AutoSize = true;
+            this.labelName.BackColor = System.Drawing.Color.Transparent;
+            this.labelName.Font = new System.Drawing.Font("Quicksand Book", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelName.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.labelName.Location = new System.Drawing.Point(3, 566);
+            this.labelName.Name = "labelName";
+            this.labelName.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.labelName.Size = new System.Drawing.Size(81, 12);
+            this.labelName.TabIndex = 39;
+            this.labelName.Text = "Logged User :";
+            // 
+            // labelUserName
+            // 
+            this.labelUserName.AutoSize = true;
+            this.labelUserName.BackColor = System.Drawing.Color.Transparent;
+            this.labelUserName.Font = new System.Drawing.Font("Quicksand Book", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUserName.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.labelUserName.Location = new System.Drawing.Point(90, 566);
+            this.labelUserName.Name = "labelUserName";
+            this.labelUserName.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.labelUserName.Size = new System.Drawing.Size(0, 12);
+            this.labelUserName.TabIndex = 40;
+            // 
             // MaidView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -168,6 +195,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(343, 589);
+            this.Controls.Add(this.labelUserName);
+            this.Controls.Add(this.labelName);
             this.Controls.Add(this.linkLabelLogin);
             this.Controls.Add(this.jThinButtonShowSelect);
             this.Controls.Add(this.label3);
@@ -198,5 +227,7 @@
         private System.Windows.Forms.Label label3;
         private JThinButton.JThinButton jThinButtonShowSelect;
         private System.Windows.Forms.LinkLabel linkLabelLogin;
+        private System.Windows.Forms.Label labelName;
+        private System.Windows.Forms.Label labelUserName;
     }
 }

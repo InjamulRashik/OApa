@@ -27,9 +27,10 @@ namespace Oapa_final_project.Models
             while (reader.Read())
             {
                 maid = new Maid();
-                maid.MaidId = reader.GetInt32(reader.GetOrdinal("MaidId"));
+                maid.MaidId = reader.GetString(reader.GetOrdinal("MaidId"));
                 maid.MaidName = reader.GetString(reader.GetOrdinal("MaidName"));
                 maid.MaidRate = reader.GetString(reader.GetOrdinal("MaidRate"));
+                //maid.Name = reader.GetString(reader.GetOrdinal("Name"));
             }
             conn.Close();
             return maid;
@@ -45,9 +46,10 @@ namespace Oapa_final_project.Models
             while (reader.Read())
             {
                 Maid temp = new Maid();
+                temp.MaidId = reader.GetString(reader.GetOrdinal("MaidId"));
                 temp.MaidName = reader.GetString(reader.GetOrdinal("MaidName"));
                 temp.MaidRate = reader.GetString(reader.GetOrdinal("MaidRate"));
-                temp.MaidId = reader.GetInt32(reader.GetOrdinal("MaidId"));
+                //temp.MaidId = reader.GetString(reader.GetOrdinal("MaidId"));
                 maid.Add(temp);
             }
             conn.Close();
@@ -59,7 +61,7 @@ namespace Oapa_final_project.Models
             //add maid into database
 
             conn.Open();
-            string query = "INSERT INTO Maids (MaidName,MaidRate) VALUES('" + maid.MaidName + "','" + maid.MaidRate + "')";
+            string query = "INSERT INTO Maids (MaidId,MaidName,MaidRate) VALUES('" + maid.MaidId + "','" + maid.MaidName + "','" + maid.MaidRate + "')";
             Console.WriteLine(query);
 
             SqlCommand cmd = new SqlCommand(query, conn);
@@ -68,5 +70,6 @@ namespace Oapa_final_project.Models
             if (result != 0) return true;
             else return false;
         }
+
     }
 }

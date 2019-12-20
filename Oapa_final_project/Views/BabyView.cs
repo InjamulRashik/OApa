@@ -16,25 +16,40 @@ namespace Oapa_final_project.Views
     {
         public static string passRate = null;
         User user;
+
         public BabyView(dynamic user)
         {
             InitializeComponent();
             this.user = user;
+            labelUserName.Text = user.Name;
 
             var babyList = BabyController.GetAllBabys();
 
             foreach (Baby baby in babyList)
             {
                 ComboBoxBaby.Items.Add(baby.BabyId + ". " + baby.BabyName);
-
             }
         }
 
-        
+        private void ComboBoxBaby_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
 
-       
+        private void MaidView_Load(object sender, EventArgs e)
+        {
 
-        
+        }
+
+        private void labelMaidName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
 
         private void buttonSelect_Click(object sender, EventArgs e)
         {
@@ -45,20 +60,26 @@ namespace Oapa_final_project.Views
             }
         }
 
-        
-
-        
-
         private void jThinButtonShowSelect_Click(object sender, EventArgs e)
         {
+            var result = BabyInfoController.AddInfo(labelUserName.Text, labelBabyName.Text);
+
             if (passRate != null)
             {
+
                 new PayCalView(passRate).Show();
                 this.Hide();
             }
         }
 
-        private void ComboBoxBaby_SelectedIndexChanged(object sender, EventArgs e)
+        private void linkLabelLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Close();
+            new LandingPageView(user).Show();
+
+        }
+
+        private void ComboBoxBaby_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             var selectedString = ComboBoxBaby.Text;
 
@@ -74,17 +95,9 @@ namespace Oapa_final_project.Views
 
             int id = Int32.Parse(ids);
             Baby bb = BabyController.GetBaby(id);
-
             labelBabyName.Text = bb.BabyName;
             labelBabyRate.Text = bb.BabyRate;
             passRate = bb.BabyRate;
-
-        }
-
-        private void linkLabelLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            this.Close();
-            new LandingPageView(user).Show();
         }
     }
 }

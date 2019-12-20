@@ -149,7 +149,7 @@
             this.jMaterialTextboxPin.Font_Size = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.jMaterialTextboxPin.ForeColors = System.Drawing.Color.Indigo;
             this.jMaterialTextboxPin.HintText = null;
-            this.jMaterialTextboxPin.IsPassword = true;
+            this.jMaterialTextboxPin.IsPassword = false;
             this.jMaterialTextboxPin.LineBackColor = System.Drawing.Color.Indigo;
             this.jMaterialTextboxPin.LineThickness = 3;
             this.jMaterialTextboxPin.Location = new System.Drawing.Point(116, 286);
@@ -231,8 +231,6 @@
             this.comboBoxProf.Name = "comboBoxProf";
             this.comboBoxProf.Size = new System.Drawing.Size(147, 21);
             this.comboBoxProf.TabIndex = 26;
-            this.comboBoxProf.Text = "Choose One";
-            //this.comboBoxProf.SelectedIndexChanged += new System.EventHandler(this.comboBoxProf_SelectedIndexChanged);
             // 
             // labelProf
             // 

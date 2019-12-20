@@ -85,15 +85,21 @@
     </Compile>
     <Compile Include="Controllers\AdminLoginController.cs" />
     <Compile Include="Controllers\BabyController.cs" />
+    <Compile Include="Controllers\BabyInfoController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\MaidController.cs" />
+    <Compile Include="Controllers\MaidInfoController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\Admins.cs" />
     <Compile Include="Models\Baby.cs" />
+    <Compile Include="Models\BabyHireInfo.cs" />
+    <Compile Include="Models\BabyHireInfos.cs" />
     <Compile Include="Models\Babys.cs" />
     <Compile Include="Models\Database.cs" />
     <Compile Include="Models\Maid.cs" />
+    <Compile Include="Models\MaidHireInfo.cs" />
+    <Compile Include="Models\MaidHireInfos.cs" />
     <Compile Include="Models\Maids.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\Users.cs" />
@@ -163,6 +169,12 @@
     <Compile Include="Views\RegistrationView.Designer.cs">
       <DependentUpon>RegistrationView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\UserHireHistoryView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\UserHireHistoryView.Designer.cs">
+      <DependentUpon>UserHireHistoryView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\UserLoginView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -212,6 +224,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\RegistrationView.resx">
       <DependentUpon>RegistrationView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserHireHistoryView.resx">
+      <DependentUpon>UserHireHistoryView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\UserLoginView.resx">
       <DependentUpon>UserLoginView.cs</DependentUpon>

@@ -38,6 +38,8 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.ComboBoxBaby = new System.Windows.Forms.ComboBox();
             this.linkLabelLogin = new System.Windows.Forms.LinkLabel();
+            this.labelName = new System.Windows.Forms.Label();
+            this.labelUserName = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // jThinButtonShowSelect
@@ -143,7 +145,7 @@
             this.ComboBoxBaby.Size = new System.Drawing.Size(218, 26);
             this.ComboBoxBaby.TabIndex = 36;
             this.ComboBoxBaby.Text = "Select Baby Sitter";
-            this.ComboBoxBaby.SelectedIndexChanged += new System.EventHandler(this.ComboBoxBaby_SelectedIndexChanged);
+            this.ComboBoxBaby.SelectedIndexChanged += new System.EventHandler(this.ComboBoxBaby_SelectedIndexChanged_1);
             // 
             // linkLabelLogin
             // 
@@ -160,6 +162,31 @@
             this.linkLabelLogin.Text = "<< Back to Home Page";
             this.linkLabelLogin.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelLogin_LinkClicked);
             // 
+            // labelName
+            // 
+            this.labelName.AutoSize = true;
+            this.labelName.BackColor = System.Drawing.Color.Transparent;
+            this.labelName.Font = new System.Drawing.Font("Quicksand Book", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelName.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.labelName.Location = new System.Drawing.Point(6, 568);
+            this.labelName.Name = "labelName";
+            this.labelName.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.labelName.Size = new System.Drawing.Size(81, 12);
+            this.labelName.TabIndex = 45;
+            this.labelName.Text = "Logged User :";
+            // 
+            // labelUserName
+            // 
+            this.labelUserName.AutoSize = true;
+            this.labelUserName.BackColor = System.Drawing.Color.Transparent;
+            this.labelUserName.Font = new System.Drawing.Font("Quicksand Book", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUserName.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.labelUserName.Location = new System.Drawing.Point(89, 567);
+            this.labelUserName.Name = "labelUserName";
+            this.labelUserName.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.labelUserName.Size = new System.Drawing.Size(0, 12);
+            this.labelUserName.TabIndex = 46;
+            // 
             // BabyView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -167,6 +194,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(343, 589);
+            this.Controls.Add(this.labelUserName);
+            this.Controls.Add(this.labelName);
             this.Controls.Add(this.linkLabelLogin);
             this.Controls.Add(this.jThinButtonShowSelect);
             this.Controls.Add(this.label3);
@@ -196,5 +225,7 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.ComboBox ComboBoxBaby;
         private System.Windows.Forms.LinkLabel linkLabelLogin;
+        private System.Windows.Forms.Label labelName;
+        private System.Windows.Forms.Label labelUserName;
     }
 }

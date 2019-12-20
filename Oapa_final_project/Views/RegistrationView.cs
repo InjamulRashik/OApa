@@ -54,25 +54,32 @@ namespace Oapa_final_project
 
         private void jThinButtonRegistration_Click(object sender, EventArgs e)
         {
-            var gender = radioButtonMale.Checked ? "Male" : "Female";
 
-            var result = UserController.AddUser(jMaterialTextboxName.TextName, jMaterialTextboxNumber.TextName, jMaterialTextboxPin.TextName, gender, comboBoxProf.Text);
-            if (!result) MessageBox.Show("Error", "Alert");
+            if (jMaterialTextboxNumber == null | jMaterialTextboxNumber == null | jMaterialTextboxPin == null | !radioButtonMale.Checked && !radioButtonFemale.Checked)
+            {
+                MessageBox.Show("Please Fillup All Informations", "Alert");
+            }
             else
             {
-                DialogResult result1 = MessageBox.Show("Succesfully registered", "Alert");
-
-                if (result1 == DialogResult.OK)
+                 var gender = radioButtonMale.Checked ? "Male" : "Female";
+                var result = UserController.AddUser(jMaterialTextboxName.TextName, jMaterialTextboxNumber.TextName, jMaterialTextboxPin.TextName,gender ,comboBoxProf.Text);
+                if (!result) MessageBox.Show("Error", "Alert");
+                else
                 {
-                    this.Hide();
-                    new UserLoginView().Show();
+                    DialogResult result1 = MessageBox.Show("Succesfully registered", "Alert");
+
+                    if (result1 == DialogResult.OK)
+                    {
+                        this.Hide();
+                        new UserLoginView().Show();
+                    }
+
+
                 }
-
-
             }
 
         }
 
-        
+
     }
 }
