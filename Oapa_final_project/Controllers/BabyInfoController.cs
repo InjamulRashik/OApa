@@ -1,5 +1,6 @@
 ﻿using Oapa_final_project.Models;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,5 +23,16 @@ namespace Oapa_final_project.Controllers
 
             return db.Bihs.AddInfo(bhi);
         }
+
+        public static ArrayList GetAllBabyHistory(string name)
+        {
+            return db.Bihs.GetAllBabyHistory(name);
+        }
+
+        public static ArrayList GetAllBabyHistory1()
+        {
+            return db.Bihs.GetAllBabyHistory1();
+        }
     }
+
 }

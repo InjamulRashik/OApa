@@ -1,4 +1,5 @@
 ﻿using Oapa_final_project.Controllers;
+using Oapa_final_project.Models;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -14,10 +15,12 @@ namespace Oapa_final_project.Views
 {
     public partial class AdminLandingPageView : Form
     {
-        public AdminLandingPageView(dynamic result)
+        Admin admin;
+        
+        public AdminLandingPageView(dynamic admin)
         {
             InitializeComponent();
-
+            this.admin = admin;
         }
 
         private void jThinButtonShowUsers_Click_1(object sender, EventArgs e)
@@ -58,6 +61,12 @@ namespace Oapa_final_project.Views
             MaidBabyRegView maidBabyRegView = new MaidBabyRegView();
             maidBabyRegView.Show();
 
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            new AllHireHistoryView(admin).Show();
         }
     }
  

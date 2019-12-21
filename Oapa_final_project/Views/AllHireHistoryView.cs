@@ -14,35 +14,35 @@ using System.Collections;
 
 namespace Oapa_final_project.Views
 {
-    public partial class UserHireHistoryView : Form
+    public partial class AllHireHistoryView : Form
     {
-        User user;
+        Admin admin;
 
-        public UserHireHistoryView(dynamic user)
+        public AllHireHistoryView(dynamic admin)
         {
             InitializeComponent();
-            this.user = user;
-            labelUserName.Text = user.Name;
+            this.admin = admin;
+            //labelUserName.Text = user.Name;
             
         }
 
         private void linkLabelLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Close();
-            new LandingPageView(user).Show();
+            new AdminLandingPageView(admin).Show();
         }
 
         private void jThinButtonShowMaids_Click(object sender, EventArgs e)
         {
             
-            ArrayList maidHireinfos = MaidInfoController.GetAllMaidHistory(labelUserName.Text);
+            ArrayList maidHireinfos = MaidInfoController.GetAllMaidHistory1();
             //dataGridViewShowInfo.DataSource = users;
             dataGridViewHistory.DataSource = maidHireinfos;
         }
 
         private void jThinButtonShowBabys_Click(object sender, EventArgs e)
         {
-            ArrayList babyHireinfos = BabyInfoController.GetAllBabyHistory(labelUserName.Text);
+            ArrayList babyHireinfos = BabyInfoController.GetAllBabyHistory1();
             //dataGridViewShowInfo.DataSource = users;
             dataGridViewHistory.DataSource = babyHireinfos;
         }

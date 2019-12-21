@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Collections;
 namespace Oapa_final_project.Controllers
 {
     class MaidInfoController
@@ -21,6 +21,15 @@ namespace Oapa_final_project.Controllers
 
 
             return db.Mihs.AddInfo(mhi);
+        }
+        public static ArrayList GetAllMaidHistory(string name)
+        {
+            return db.Mihs.GetAllMaidHistory(name);
+        }
+
+        public static ArrayList GetAllMaidHistory1()
+        {
+            return db.Mihs.GetAllMaidHistory1();
         }
     }
 }

@@ -169,6 +169,12 @@
     <Compile Include="Views\RegistrationView.Designer.cs">
       <DependentUpon>RegistrationView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\AllHireHistoryView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AllHireHistoryView.Designer.cs">
+      <DependentUpon>AllHireHistoryView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\UserHireHistoryView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -224,6 +230,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\RegistrationView.resx">
       <DependentUpon>RegistrationView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AllHireHistoryView.resx">
+      <DependentUpon>AllHireHistoryView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\UserHireHistoryView.resx">
       <DependentUpon>UserHireHistoryView.cs</DependentUpon>
