@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Oapa_final_project.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,11 @@ namespace Oapa_final_project.Views
 {
     public partial class PayCalView : Form
     {
+        User user;
         public static string passRate;
-        public PayCalView(dynamic rate)
+        public PayCalView(dynamic rate,dynamic user)
         {
+            this.user = user;
             InitializeComponent();
             labelRate.Text = rate;
             passRate = rate;
@@ -38,7 +41,7 @@ namespace Oapa_final_project.Views
 
         private void jThinButtonConfirm_Click(object sender, EventArgs e)
         {
-            new QRView(passRate).Show();
+            new QRView(passRate,user).Show();
             this.Hide();
         }
 
@@ -51,6 +54,17 @@ namespace Oapa_final_project.Views
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void jThinButtonCancel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new LandingPageView(user).Show();
+        }
+
+        private void PayCalView_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -46,5 +46,10 @@ namespace Oapa_final_project.Views
             //dataGridViewShowInfo.DataSource = users;
             dataGridViewHistory.DataSource = babyHireinfos;
         }
+
+        private void AllHireHistoryView_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

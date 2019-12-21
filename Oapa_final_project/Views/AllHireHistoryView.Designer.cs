@@ -146,6 +146,7 @@
             this.Name = "AllHireHistoryView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UserHireHistoryView";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AllHireHistoryView_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHistory)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

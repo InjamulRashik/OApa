@@ -209,6 +209,7 @@
             this.Name = "BabyView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BabyView";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.BabyView_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

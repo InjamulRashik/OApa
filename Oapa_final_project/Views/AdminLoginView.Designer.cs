@@ -148,6 +148,7 @@
             this.Name = "AdminLoginView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminLoginView";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AdminLoginView_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

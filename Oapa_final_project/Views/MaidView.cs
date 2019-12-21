@@ -72,7 +72,7 @@ namespace Oapa_final_project.Views
         {
             if(passRate != null)
             {
-                new PayCalView(passRate).Show();
+                new PayCalView(passRate,user).Show();
                 this.Hide();
             }
         }
@@ -84,7 +84,7 @@ namespace Oapa_final_project.Views
             if (passRate != null)
             {
                 
-                new PayCalView(passRate).Show();
+                new PayCalView(passRate,user).Show();
                 this.Hide();
             }
         }
@@ -94,6 +94,11 @@ namespace Oapa_final_project.Views
             this.Close();
             new LandingPageView(user).Show();
 
+        }
+
+        private void MaidView_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

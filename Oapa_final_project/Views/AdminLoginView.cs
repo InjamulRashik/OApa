@@ -34,6 +34,9 @@ namespace Oapa_final_project.Views
             }
         }
 
-       
+        private void AdminLoginView_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

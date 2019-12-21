@@ -364,6 +364,7 @@
             this.DoubleBuffered = true;
             this.Name = "MaidBabyRegView";
             this.Text = "MaidBabyRegView";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MaidBabyRegView_FormClosing);
             this.Load += new System.EventHandler(this.MaidBabyRegView_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

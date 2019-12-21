@@ -78,5 +78,10 @@ namespace Oapa_final_project.Views
         {
 
         }
+
+        private void MaidBabyRegView_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

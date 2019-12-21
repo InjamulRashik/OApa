@@ -55,7 +55,7 @@ namespace Oapa_final_project.Views
         {
             if (passRate != null)
             {
-                new PayCalView(passRate).Show();
+                new PayCalView(passRate,user).Show();
                 this.Hide();
             }
         }
@@ -67,7 +67,7 @@ namespace Oapa_final_project.Views
             if (passRate != null)
             {
 
-                new PayCalView(passRate).Show();
+                new PayCalView(passRate,user).Show();
                 this.Hide();
             }
         }
@@ -98,6 +98,12 @@ namespace Oapa_final_project.Views
             labelBabyName.Text = bb.BabyName;
             labelBabyRate.Text = bb.BabyRate;
             passRate = bb.BabyRate;
+        }
+
+        private void BabyView_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+
         }
     }
 }

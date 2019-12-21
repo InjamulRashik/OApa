@@ -210,6 +210,7 @@
             this.jThinButtonCancel.Name = "jThinButtonCancel";
             this.jThinButtonCancel.Size = new System.Drawing.Size(81, 38);
             this.jThinButtonCancel.TabIndex = 32;
+            this.jThinButtonCancel.Click += new System.EventHandler(this.jThinButtonCancel_Click);
             // 
             // label9
             // 
@@ -339,6 +340,7 @@
             this.Name = "PayCalView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PayCalView";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PayCalView_FormClosing);
             this.Load += new System.EventHandler(this.PayCalView_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();

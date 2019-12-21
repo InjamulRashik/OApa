@@ -9,11 +9,13 @@ using System.Windows.Forms;
 using MessagingToolkit.QRCode.Codec;
 using MessagingToolkit.QRCode.Codec.Data;
 using BasselTech_CamCapture;
+using Oapa_final_project.Models;
 
 namespace Oapa_final_project.Views
 {
     public partial class QRView : Form
     {
+        User user;
         int timeCs, timeSec, timeMin , timeHour;
         bool isActive;
         public static int passValueMin;
@@ -23,9 +25,11 @@ namespace Oapa_final_project.Views
         Timer t;
         BackgroundWorker worker;
         Bitmap CapImage;
-        public QRView(dynamic rate)
+        public QRView(dynamic rate,dynamic user)
         {
             InitializeComponent();
+
+            this.user = user;
 
             passRate = rate;
 
@@ -118,7 +122,7 @@ namespace Oapa_final_project.Views
         private void jThinButtonDone_Click(object sender, EventArgs e)
         {
             this.Hide();
-            new PaySlipView(passValueMin, passValueSec, passRate).Show();
+            new PaySlipView(passValueMin, passValueSec, passRate,user).Show();
         }
 
         private void jThinButtonStop_Click(object sender, EventArgs e)

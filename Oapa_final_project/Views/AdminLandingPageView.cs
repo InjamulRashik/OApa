@@ -68,6 +68,11 @@ namespace Oapa_final_project.Views
             this.Hide();
             new AllHireHistoryView(admin).Show();
         }
+
+        private void FormClosingEvent(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
  
 }

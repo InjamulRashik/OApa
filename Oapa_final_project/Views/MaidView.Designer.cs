@@ -210,6 +210,7 @@
             this.Name = "MaidView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MaidView";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MaidView_FormClosing);
             this.Load += new System.EventHandler(this.MaidView_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

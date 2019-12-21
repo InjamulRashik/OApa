@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Oapa_final_project.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,10 +15,13 @@ namespace Oapa_final_project.Views
     {
         //private dynamic user;
         //private dynamic result;
+        User user;
 
-        public PaySlipView(dynamic min, dynamic sec, dynamic rate)
+
+        public PaySlipView(dynamic min, dynamic sec, dynamic rate,dynamic user)
         {
             InitializeComponent();
+            this.user = user;
             int totSec = min * 60 + sec;
             int rt = Int32.Parse(rate);
 
@@ -55,7 +59,8 @@ namespace Oapa_final_project.Views
         {
             //this.Close();
             //new LandingPageView(result).Show();
-            Application.Exit();
+            this.Hide();
+            new LandingPageView(user).Show();
             
             
         }
