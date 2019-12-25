@@ -18,7 +18,7 @@ namespace Oapa_final_project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new RegistrationView());
+            Application.Run(new HomePageView());
         }
     }
 }
