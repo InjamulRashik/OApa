@@ -1,3 +1,6 @@
+MVC(Model,View and Controller) Architecture Has Been Used 
+GUI in Views, Properties in Models, Method calling in Controller
+
 Connection String for the Database " conn = new SqlConnection("Server="  ";Database=OAPA1;User Id=" ";Password=" ";"); "
 Database Has been Attached 
 
